@@ -1,0 +1,137 @@
+/* Geral */
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content-wrapper {
+    flex: 1;
+}
+.main-block {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+
+    border: 1px solid #ffc107;
+    height: 100%;
+}
+.main-block:hover {
+    transform: translateY(-5px);
+}
+footer {
+    background: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #c25d1e;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 240px;
+    background-color: #8a2f07;
+    color: white;
+    padding-top: 1rem;
+    z-index: 1000;
+}
+
+.sidebar .nav-link {
+    color: white;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #c25d1e;
+    color: #ffc107;
+}
+
+.nav-item {
+    font-size: 15pt;
+    margin-bottom: 5pt;
+}
+
+/* Títulos */
+.title {
+    color: #a94d14;
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+/* Header com imagem */
+header {
+    background-image: url('https://images.unsplash.com/photo-1541542684-4b9c4b1d3423?auto=format&fit=crop&w=1280&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 12px;
+}
+
+/* Conteúdo Principal */
+.content-wrapper {
+    margin-left: 240px;
+    padding: 2rem;
+}
+
+/* Bloco Central */
+.main-block {
+    margin-top: 40px;
+    background-color: #e2e2e2;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.main-block h2 
+{
+    color: #5a2300;
+}
+
+.main-block p
+{
+    font-size: 15pt;
+}
+/* Formulário */
+.form-card {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-header {
+    background-color: #c25d1e;
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+}

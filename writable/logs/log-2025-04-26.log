@@ -1,0 +1,1263 @@
+ERROR - 2025-04-26 11:03:48 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-26 11:26:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cadastro.php"
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cadastro', [], true)
+ 3 APPPATH\Controllers\Users.php(14): view('cadastro')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:26:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cadastro.php"
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cadastro', [], true)
+ 3 APPPATH\Controllers\Users.php(14): view('cadastro')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:28:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "cadastro.php"
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cadastro', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(14): view('cadastro')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:29:26 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\View\View.php on line 442.
+ 1 APPPATH\Views\usuarios\cadastro.php(55): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\usuarios\\cadastro.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/cadastro', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(14): view('usuarios/cadastro')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:30:25 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\View\View.php on line 442.
+ 1 APPPATH\Views\usuarios\cadastro.php(65): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\usuarios\\cadastro.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/cadastro', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(14): view('usuarios/cadastro')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:30:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "../layouts/main.php"
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../layouts/main.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('../layouts/main', [], true)
+ 3 APPPATH\Views\usuarios\cadastro.php(10): view('../layouts/main')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\usuarios\\cadastro.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/cadastro', [], true)
+ 7 APPPATH\Controllers\Usuarios.php(14): view('usuarios/cadastro')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:31:14 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\View\View.php on line 442.
+ 1 APPPATH\Views\usuarios\cadastro.php(65): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\usuarios\\cadastro.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/cadastro', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(14): view('usuarios/cadastro')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:31:46 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\View\View.php on line 442.
+ 1 APPPATH\Views\usuarios\cadastro.php(65): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\usuarios\\cadastro.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/cadastro', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(14): view('usuarios/cadastro')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:32:20 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\View\View.php on line 442.
+ 1 APPPATH\Views\usuarios\cadastro.php(65): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\usuarios\\cadastro.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/cadastro', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(14): view('usuarios/cadastro')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:41:53 --> Error: Class "App\Controllers\UserModel" not found
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:43:24 --> Error: Class "App\Controllers\UsuariosModel" not found
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:43:36 --> Error: Call to undefined method App\Controllers\Usuarios::insert()
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:44:23 --> Error: Call to undefined method App\Controllers\Usuarios::insert()
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:44:43 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 31.
+ 1 APPPATH\Controllers\Usuarios.php(38): App\Controllers\Usuarios->cadastrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:45:45 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 31.
+ 1 APPPATH\Controllers\Usuarios.php(38): App\Controllers\Usuarios->cadastrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:49:01 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 33.
+ 1 APPPATH\Controllers\Usuarios.php(40): App\Controllers\Usuarios->cadastrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:49:06 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 33.
+ 1 APPPATH\Controllers\Usuarios.php(40): App\Controllers\Usuarios->cadastrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:51:52 --> Error: Class "App\Models\UsuariosModel" not found
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:52:32 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 33.
+ 1 APPPATH\Controllers\Usuarios.php(40): App\Controllers\Usuarios->cadastrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:54:11 --> BadMethodCallException: Call to undefined method App\Models\UsuariosModel::cadastrar
+[Method: POST, Route: usuarios/cadastrar]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Usuarios.php(40): CodeIgniter\Model->__call('cadastrar', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 11:55:59 --> BadMethodCallException: Call to undefined method App\Models\UsuariosModel::cadastrar
+[Method: POST, Route: usuarios/cadastrar]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Usuarios.php(40): CodeIgniter\Model->__call('cadastrar', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-26 12:00:31 --> mysqli_sql_exception: Table 'usuarios' already exists in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\gestorcheff\app\Database\Migrations\2025-04-26-115909_Usuarios.php(26): CodeIgniter\Database\Forge->createTable('usuarios')
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(867): App\Database\Migrations\Usuarios->up()
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-26 12:00:47 --> mysqli_sql_exception: Table 'usuarios' already exists in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\gestorcheff\app\Database\Migrations\2025-04-26-115909_Usuarios.php(26): CodeIgniter\Database\Forge->createTable('usuarios')
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(867): App\Database\Migrations\Usuarios->up()
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-26 12:03:17 --> ErrorException: Cannot declare class App\Controllers\Usuarios because the name is already in use
+[Method: GET, Route: usuarios/cadastro]
+in APPPATH\Controllers\Usuarios.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-26 12:03:39 --> Error: Class "App\Controllers\UsuariosModel" not found
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:04:14 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 32.
+ 1 APPPATH\Controllers\Usuarios.php(39): App\Controllers\Usuarios->cadastrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:09:04 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 33.
+ 1 APPPATH\Controllers\Usuarios.php(40): App\Controllers\Usuarios->cadastrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-04-26 12:09:39 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Usuarios.php on line 19.
+ 1 APPPATH\Controllers\Usuarios.php(19): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-26 12:09:39 --> mysqli_sql_exception: Column 'nome' cannot be null in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gestorcheff\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\gestorcheff\app\Controllers\Usuarios.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-26 12:09:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nome' cannot be null
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `telefone`, `senha`, `datanascimento`, `ativo`, `criado_em`, `atualizado_em`) VALUES (:nome:, :sobrenome:, :email:, :cpf:, :telefone:, :senha:, :datanascimento:, :ativo:, :criado_em:, :atualizado_em:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Usuarios.php(24): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:09:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nome' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `telefone`, `senha`, `datanascimento`, `ativo`, `criado_em`, `atualizado_em`) VALUES (NULL, NULL, NULL, NULL, NULL, \'$2y$10$pAXyrSLxGVmbPl7PPcdVa.gtTuxjiZVGfTJPxMJWJH/ZOveYr7nCe\', NULL, 1, \'2025-04-26 12:09:39\', \'2025-04-26 12:09:39\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `telefone`, `senha`, `datanascimento`, `ativo`, `criado_em`, `atualizado_em`) VALUES (NULL, NULL, NULL, NULL, NULL, \'$2y$10$pAXyrSLxGVmbPl7PPcdVa.gtTuxjiZVGfTJPxMJWJH/ZOveYr7nCe\', NULL, 1, \'2025-04-26 12:09:39\', \'2025-04-26 12:09:39\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `telefone`, `senha`, `datanascimento`, `ativo`, `criado_em`, `atualizado_em`) VALUES (:nome:, :sobrenome:, :email:, :cpf:, :telefone:, :senha:, :datanascimento:, :ativo:, :criado_em:, :atualizado_em:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Usuarios.php(24): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:09:39 --> [Caused by] mysqli_sql_exception: Column 'nome' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `telefone`, `senha`, `datanascimento`, `ativo`, `criado_em`, `atualizado_em`) VALUES (NULL, NULL, NULL, NULL, NULL, \'$2y$10$pAXyrSLxGVmbPl7PPcdVa.gtTuxjiZVGfTJPxMJWJH/ZOveYr7nCe\', NULL, 1, \'2025-04-26 12:09:39\', \'2025-04-26 12:09:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `telefone`, `senha`, `datanascimento`, `ativo`, `criado_em`, `atualizado_em`) VALUES (NULL, NULL, NULL, NULL, NULL, \'$2y$10$pAXyrSLxGVmbPl7PPcdVa.gtTuxjiZVGfTJPxMJWJH/ZOveYr7nCe\', NULL, 1, \'2025-04-26 12:09:39\', \'2025-04-26 12:09:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `telefone`, `senha`, `datanascimento`, `ativo`, `criado_em`, `atualizado_em`) VALUES (NULL, NULL, NULL, NULL, NULL, \'$2y$10$pAXyrSLxGVmbPl7PPcdVa.gtTuxjiZVGfTJPxMJWJH/ZOveYr7nCe\', NULL, 1, \'2025-04-26 12:09:39\', \'2025-04-26 12:09:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `telefone`, `senha`, `datanascimento`, `ativo`, `criado_em`, `atualizado_em`) VALUES (:nome:, :sobrenome:, :email:, :cpf:, :telefone:, :senha:, :datanascimento:, :ativo:, :criado_em:, :atualizado_em:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Usuarios.php(24): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:10:24 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 33.
+ 1 APPPATH\Controllers\Usuarios.php(40): App\Controllers\Usuarios->cadastrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:12:44 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: usuarios/cadastrar]
+in APPPATH\Controllers\Usuarios.php on line 33.
+ 1 APPPATH\Controllers\Usuarios.php(40): App\Controllers\Usuarios->cadastrar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 12:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-26 12:23:31 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:23:33 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:23:35 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:26:26 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:26:27 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:26:44 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:26:44 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:26:47 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:26:49 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:26:51 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:27:23 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:27:23 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:27:26 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 20 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(20): CodeIgniter\Router\RouteCollection->get('usuarios/login')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 12:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-26 12:36:36 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+[Method: GET, Route: usuarios/cadastro]
+in APPPATH\Views\layouts\main.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-04-26 12:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 12:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-26 12:56:20 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: usuarios/%3C]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('usuarios/<')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('usuarios/<')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:57:43 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: usuarios/%3C]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('usuarios/<')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('usuarios/<')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 12:58:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 13:00:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+[Method: GET, Route: home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 13:00:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+[Method: GET, Route: home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 13:00:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+[Method: GET, Route: home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 13:00:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 13:01:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 13:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-26 13:19:07 --> mysqli_sql_exception: Duplicate entry 'joseotavio_m@hotmail.com' for key 'email' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gestorcheff\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\gestorcheff\app\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+#10 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#11 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-04-26 13:19:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'joseotavio_m@hotmail.com' for key 'email'
+[Method: POST, Route: usuarios/cadastrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (:nome:, :sobrenome:, :email:, :cpf:, :datanascimento:, :criado_em:, :atualizado_em:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 13:19:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'joseotavio_m@hotmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'joseotavio_m@hotmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:07\', \'2025-04-26 13:19:07\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'joseotavio_m@hotmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:07\', \'2025-04-26 13:19:07\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (:nome:, :sobrenome:, :email:, :cpf:, :datanascimento:, :criado_em:, :atualizado_em:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 13:19:07 --> [Caused by] mysqli_sql_exception: Duplicate entry 'joseotavio_m@hotmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'joseotavio_m@hotmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:07\', \'2025-04-26 13:19:07\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'joseotavio_m@hotmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:07\', \'2025-04-26 13:19:07\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'joseotavio_m@hotmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:07\', \'2025-04-26 13:19:07\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (:nome:, :sobrenome:, :email:, :cpf:, :datanascimento:, :criado_em:, :atualizado_em:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-26 13:19:15 --> mysqli_sql_exception: Duplicate entry '059.621.676-94' for key 'cpf' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gestorcheff\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\gestorcheff\app\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+#10 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#11 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-04-26 13:19:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '059.621.676-94' for key 'cpf'
+[Method: POST, Route: usuarios/cadastrar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (:nome:, :sobrenome:, :email:, :cpf:, :datanascimento:, :criado_em:, :atualizado_em:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 13:19:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '059.621.676-94' for key 'cpf'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'phillbaladeiro@gmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:15\', \'2025-04-26 13:19:15\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'phillbaladeiro@gmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:15\', \'2025-04-26 13:19:15\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (:nome:, :sobrenome:, :email:, :cpf:, :datanascimento:, :criado_em:, :atualizado_em:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 13:19:15 --> [Caused by] mysqli_sql_exception: Duplicate entry '059.621.676-94' for key 'cpf'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'phillbaladeiro@gmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:15\', \'2025-04-26 13:19:15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'phillbaladeiro@gmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:15\', \'2025-04-26 13:19:15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (\'José Otávio\', \'Miguel\', \'phillbaladeiro@gmail.com\', \'059.621.676-94\', \'1999-04-12\', \'2025-04-26 13:19:15\', \'2025-04-26 13:19:15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome`, `sobrenome`, `email`, `cpf`, `datanascimento`, `criado_em`, `atualizado_em`) VALUES (:nome:, :sobrenome:, :email:, :cpf:, :datanascimento:, :criado_em:, :atualizado_em:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastrar()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 13:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 13:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-26 14:22:44 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\xampp\htdocs\gestorcheff\app\Config\Routes.php on line 21 and at least 2 expected
+[Method: GET, Route: home]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(21): CodeIgniter\Router\RouteCollection->get('/restaurantes/cadastro')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\xampp\\htdocs\\gestorcheff\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 14:23:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "restaurantes/cadastro.php"
+[Method: GET, Route: restaurantes/cadastro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('restaurantes/cadastro.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/cadastro', [], true)
+ 3 APPPATH\Controllers\Restaurantes.php(12): view('restaurantes/cadastro')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 14:24:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "restaurantes/cadastro.php"
+[Method: GET, Route: restaurantes/cadastrar]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('restaurantes/cadastro.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/cadastro', [], true)
+ 3 APPPATH\Controllers\Restaurantes.php(12): view('restaurantes/cadastro')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 14:24:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "restaurantes/cadastro.php"
+[Method: GET, Route: restaurantes/cadastrar]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('restaurantes/cadastro.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/cadastro', [], true)
+ 3 APPPATH\Controllers\Restaurantes.php(12): view('restaurantes/cadastro')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 14:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-26 14:27:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuarios/cadastro.php"
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/cadastro.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/cadastro', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(23): view('usuarios/cadastro')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 14:28:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuarios/cadastro-usuarios.php"
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/cadastro-usuarios.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/cadastro-usuarios', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(23): view('usuarios/cadastro-usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 14:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-26 14:28:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuarios/cadastro-usuarios.php"
+[Method: GET, Route: usuarios/cadastro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/cadastro-usuarios.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/cadastro-usuarios', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(23): view('usuarios/cadastro-usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuarios->cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 14:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-26 14:38:10 --> Error: Class "App\Models\RestauranteModel" not found
+[Method: POST, Route: restaurantes/cadastrar]
+in APPPATH\Controllers\Restaurantes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 14:39:25 --> Error: Class "App\Controllers\RestaurantesModel" not found
+[Method: POST, Route: restaurantes/cadastrar]
+in APPPATH\Controllers\Restaurantes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 14:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-26 14:39:48 --> Error: Class "App\Controllers\RestaurantesModel" not found
+[Method: POST, Route: restaurantes/cadastrar]
+in APPPATH\Controllers\Restaurantes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 14:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-26 14:50:24 --> mysqli_sql_exception: Table 'usuarios' already exists in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\gestorcheff\app\Database\Migrations\2025-04-26-115909_Usuarios.php(26): CodeIgniter\Database\Forge->createTable('usuarios')
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(867): App\Database\Migrations\Usuarios->up()
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-04-26 14:51:13 --> mysqli_sql_exception: Table 'restaurantes' already exists in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `r...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 C:\xampp\htdocs\gestorcheff\app\Database\Migrations\2025-04-26-144937_Restaurantes.php(75): CodeIgniter\Database\Forge->createTable('restaurantes')
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(867): App\Database\Migrations\Restaurantes->up()
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+INFO - 2025-04-26 14:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 14:52:34 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 14:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 14:52:49 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 14:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 14:52:53 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 14:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 14:54:39 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 14:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 14:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 15:00:09 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 15:00:09 --> ErrorException: Undefined variable $model
+[Method: POST, Route: restaurantes/cadastrar]
+in APPPATH\Controllers\Restaurantes.php on line 34.
+ 1 APPPATH\Controllers\Restaurantes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Restaurantes.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-04-26 15:01:31 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 15:01:31 --> ErrorException: Undefined variable $model
+[Method: POST, Route: restaurantes/cadastrar]
+in APPPATH\Controllers\Restaurantes.php on line 34.
+ 1 APPPATH\Controllers\Restaurantes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Restaurantes.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 15:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 15:01:34 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 15:01:34 --> ErrorException: Undefined variable $model
+[Method: POST, Route: restaurantes/cadastrar]
+in APPPATH\Controllers\Restaurantes.php on line 34.
+ 1 APPPATH\Controllers\Restaurantes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Restaurantes.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 15:01:51 --> Error: Class "App\Controllers\App" not found
+[Method: POST, Route: restaurantes/cadastrar]
+in APPPATH\Controllers\Restaurantes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-04-26 15:02:06 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-26 15:02:06 --> ErrorException: Undefined variable $model
+[Method: POST, Route: restaurantes/cadastrar]
+in APPPATH\Controllers\Restaurantes.php on line 34.
+ 1 APPPATH\Controllers\Restaurantes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Restaurantes.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-04-26 15:02:20 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 15:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 15:05:25 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 15:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 15:10:13 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 15:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 15:12:42 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 15:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 15:13:58 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 15:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 15:15:03 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 15:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 15:15:14 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 15:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-04-26 15:15:42 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Restaurantes.php on line 31.
+ 1 APPPATH\Controllers\Restaurantes.php(31): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Restaurantes->cadastrar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurantes))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-04-26 15:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-04-26 15:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
