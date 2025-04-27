@@ -89,7 +89,7 @@
                                 <h4 class="mb-3 text-success"><i class="bi bi-gear-fill"></i> Gerenciar Restaurante</h4>
                                 <p>Controle cardápios, pedidos, entregas e muito mais.</p>
                             </div>
-                            <a href="<?= base_url('restaurantes/login-restaurante') ?>" class="btn btn-success btn-lg w-100 mt-3">
+                            <a href="<?= base_url('restaurantes/login') ?>" class="btn btn-success btn-lg w-100 mt-3">
                                 <i class="bi bi-gear-fill"></i> Começar
                             </a>
                         </div>

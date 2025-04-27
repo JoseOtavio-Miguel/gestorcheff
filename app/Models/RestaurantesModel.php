@@ -57,4 +57,6 @@ class RestaurantesModel extends Model
     ];
 
     protected $skipValidation = false;
+
+    protected $returnType       = 'array'; // Vai retornar um array associativo
 }

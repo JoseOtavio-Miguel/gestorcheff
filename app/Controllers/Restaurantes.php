@@ -12,6 +12,7 @@ class Restaurantes extends Controller
         return view('restaurantes/cadastro-restaurante');
     }
 
+
     public function cadastrar()
     {
         $restaurantes = new RestaurantesModel();
@@ -38,33 +39,51 @@ class Restaurantes extends Controller
         }
     }
 
+
     public function login()
     {
         return view('restaurantes/login-restaurante');
+
     }
+
+    public function painel($restauranteId)
+{
+    return view('restaurantes/painel-restaurante', [  // <-- CERTO
+        'restauranteId' => $restauranteId,
+        'restauranteNome' => session()->get('restaurante_nome')
+    ]);
+}
+
+
 
     public function logar()
     {
-        $restaurantes = new \App\Models\RestaurantesModel();
-
         $email = $this->request->getPost('email');
         $senha = $this->request->getPost('senha');
 
-        $restaurante = $restaurantes->where('email', $email)->first();
+        // Buscar o restaurante no banco
+        $restauranteModel = new RestaurantesModel();
+        $restaurante = $restauranteModel->where('email', $email)->first(); // <-- Aqui!!
 
         if ($restaurante && password_verify($senha, $restaurante['senha'])) {
-            // Login bem-sucedido
+            // Login bem-sucedido!
+
+            // Salvar os dados na sessão
             session()->set([
                 'restaurante_id' => $restaurante['id'],
                 'restaurante_nome' => $restaurante['nome'],
-                'logged_in_restaurante' => true,
+                'logado' => true
             ]);
 
-            return redirect()->to(base_url('home'))->with('success', 'Login realizado com sucesso!');
-
+            // Redireciona para o painel
+            return view('restaurantes/painel-restaurante', [
+                'restauranteId' => $restaurante['id'], // <- pega o ID real do restaurante!
+                'restauranteNome' => session()->get('restaurante_nome')
+            ]);
+            
         } else {
-            // Falha no login
-            return redirect()->to('/restaurantes/login-restaurante')->with('error', 'E-mail ou senha inválidos.');
+            // Login inválido
+            return redirect()->back()->with('error', 'E-mail ou senha incorretos.');
         }
     }
 
