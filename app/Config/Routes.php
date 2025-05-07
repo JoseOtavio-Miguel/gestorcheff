@@ -25,14 +25,11 @@ $routes->post('restaurantes/cadastrar', 'Restaurantes::cadastrar');
 // Página de login do restaurante
 $routes->get('restaurantes/login','Restaurantes::login');
 
-
 // Logar restaurante
 $routes->post('restaurantes/logar', 'Restaurantes::logar');
 
-
 // Painel do restaurante
 $routes->get('painel/(:num)', 'Restaurantes::painel/$1');
-
 
 
 
@@ -40,6 +37,9 @@ $routes->get('painel/(:num)', 'Restaurantes::painel/$1');
 
 // Página para Registro do Usuario 
 $routes->get('usuarios/cadastro', 'Usuarios::cadastro');
+
+// Página contendo o painel do Usuário
+$routes->get('usuarios/painel-usuario', 'Usuarios::painelUsuario');
 
 // Página para Login do Usuário 
 $routes->get('usuarios/login', 'Usuarios::login');
@@ -62,12 +62,10 @@ $routes->get('usuarios/informacao', 'Usuarios::info');
 // Página Principal de Cardapio
 $routes->get('cardapio/(:num)', 'Cardapio::index/$1');
 
-
 // Página de Cadastro 
 $routes->get('cardapio/novo/(:num)', 'Cardapio::novo/$1');
-
 
 // Cadastrar novo Cardapio
 $routes->post('cardapio/salvar/(:num)', 'Cardapio::salvar/$1');
 
-
+$routes->get('cardapiousuario/cardapio', 'CardapioUsuario::cardapio');

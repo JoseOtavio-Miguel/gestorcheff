@@ -16,6 +16,7 @@ class Usuarios extends BaseController
     {
         return view('usuarios/login-usuario');
     }
+    
 
     // Retorna a página para cadastro
     public function cadastro()
@@ -27,6 +28,11 @@ class Usuarios extends BaseController
     public function information(): string
     {
         return view('users/information');
+    }
+
+    public function painelUsuario()
+    {
+        return view('usuarios/painel-usuario');
     }
 
 
@@ -80,7 +86,7 @@ class Usuarios extends BaseController
                     'logged_in' => true
                 ];
                 $session->set($sessionData);
-                return redirect()->to(base_url('home'))->with('success', 'Login realizado com sucesso!');
+                return redirect()->to(base_url('/usuarios/painelUsuario'))->with('success', 'Login realizado com sucesso!');
             } else {
                 return redirect()->back()->with('error', 'Senha incorreta.');
             }
@@ -94,5 +100,4 @@ class Usuarios extends BaseController
         session()->destroy();
         return redirect()->to(base_url('usuarios/login'))->with('success', 'Você saiu com sucesso.');
     }
-    
 }
