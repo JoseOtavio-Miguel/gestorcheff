@@ -6,6 +6,19 @@ use CodeIgniter\Controller; // ou BaseController, depende de onde herdou
 
 class Pedidos extends BaseController {
 
+    public function index($restauranteId)
+    {
+        $pedidosModel = new \App\Models\PedidosModel();
+
+        $pedidos = $pedidosModel->where('restaurante_id', $restauranteId)->orderBy('criado_em', 'DESC')->findAll();
+
+        return view('restaurantes/pedidos-restaurante', [
+            'pedidos' => $pedidos
+        ]);
+    }
+
+
+
         // Pedidos.php (Controller)
         public function salvar()
         {

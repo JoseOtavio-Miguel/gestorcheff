@@ -69,3 +69,15 @@ $routes->get('cardapio/novo/(:num)', 'Cardapio::novo/$1');
 $routes->post('cardapio/salvar/(:num)', 'Cardapio::salvar/$1');
 
 $routes->get('cardapiousuario/cardapio', 'CardapioUsuario::cardapio');
+
+// routes.php
+$routes->get('cardapio/painel/(:num)', 'Cardapio::painel/$1');
+
+$routes->get('restaurantes/editar/(:num)', 'Restaurantes::editar/$1');
+$routes->post('restaurantes/atualizar/(:num)', 'Restaurantes::atualizar/$1');
+
+$routes->get('relatorios', 'Relatorios::index');
+
+$routes->get('pedidos/(:num)', 'Pedidos::index/$1');
+
+$routes->get('usuarios/painelUsuario', 'Usuarios::painelUsuario');

@@ -14,7 +14,8 @@ class Usuarios extends BaseController
     // Página de Login do Usuario
     public function login()
     {
-        return view('usuarios/login-usuario');
+        return redirect()->to(base_url('/usuarios/painelUsuario'))->with('success', 'Login realizado com sucesso!');
+
     }
     
 

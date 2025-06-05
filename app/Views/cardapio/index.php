@@ -10,10 +10,14 @@
         </div>
     <?php endif; ?>
 
-    <!-- Botão para Adicionar Novo Item -->
+    <!-- Botões de Navegação -->
     <div class="text-center mb-4">
-    <a href="<?= base_url('cardapio/novo/' . $restauranteId) ?>" class="btn-custom btn btn-danger w-75 mt-3"> + Novo Item</a>
-
+        <a href="<?= base_url('cardapio/painel/' . $restauranteId) ?>" class="btn btn-outline-secondary mb-2 w-75">
+            ← Voltar
+        </a>
+        <a href="<?= base_url('cardapio/novo/' . $restauranteId) ?>" class="btn-custom btn btn-danger w-75">
+            + Novo Item
+        </a>
     </div>
 
     <!-- Lista de Itens do Cardápio -->
@@ -27,7 +31,10 @@
                         <h5 class="text-danger fw-bold mb-3">R$ <?= number_format($item['preco'], 2, ',', '.') ?></h5>
                         <div class="d-flex justify-content-center gap-3">
                             <a href="<?= base_url('cardapio/editar/' . $item['id']) ?>" class="btn btn-warning btn-sm rounded-3 px-3">Editar</a>
-                            <a href="<?= base_url('cardapio/excluir/' . $item['id']) ?>" class="btn btn-outline-danger btn-sm rounded-3 px-3" onclick="return confirm('Tem certeza que deseja excluir este item?');">Excluir</a>
+                            <form method="post" action="<?= base_url('cardapio/excluir/' . $item['id']) ?>" class="d-inline">
+                                <?= csrf_field() ?>
+                                <button type="submit" class="btn btn-outline-danger btn-sm rounded-3 px-3" onclick="return confirm('Tem certeza que deseja excluir este item?');">Excluir</button>
+                            </form>
                         </div>
                     </div>
                 </div>

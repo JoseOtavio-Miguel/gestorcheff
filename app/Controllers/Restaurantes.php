@@ -7,6 +7,13 @@ use CodeIgniter\Controller;
 
 class Restaurantes extends Controller
 {
+    protected $restaurantesModel;
+
+    public function __construct()
+    {
+        $this->restaurantesModel = new RestaurantesModel(); // ← instanciando o model
+    }
+    
     public function cadastro()
     {
         return view('restaurantes/cadastro-restaurante');
@@ -16,6 +23,7 @@ class Restaurantes extends Controller
     public function cadastrar()
     {
         $restaurantes = new RestaurantesModel();
+        
 
         // Pega os dados do formulário
         $data = [
@@ -47,12 +55,12 @@ class Restaurantes extends Controller
     }
 
     public function painel($restauranteId)
-{
-    return view('restaurantes/painel-restaurante', [  // <-- CERTO
-        'restauranteId' => $restauranteId,
-        'restauranteNome' => session()->get('restaurante_nome')
-    ]);
-}
+    {
+        return view('restaurantes/painel-restaurante', [  // <-- CERTO
+            'restauranteId' => $restauranteId,
+            'restauranteNome' => session()->get('restaurante_nome')
+        ]);
+    }   
 
 
 
@@ -87,4 +95,42 @@ class Restaurantes extends Controller
         }
     }
 
+    /**
+    * Exibe o formulário de edição de um restaurante.
+    */
+    public function editar($id)
+        {
+            $restaurante = $this->restaurantesModel->find($id);
+
+            if (!$restaurante) {
+                return redirect()->to(base_url('restaurantes'))->with('error', 'Restaurante não encontrado.');
+            }
+
+            return view('restaurantes/editar-restaurante', [
+                'restaurante' => $restaurante
+            ]);
+        }
+
+    /**
+    * Processa os dados e atualiza o restaurante.
+    */
+
+    
+    public function atualizar($id)
+    {
+        $restaurante = $this->restaurantesModel->find($id);
+
+        if (!$restaurante) {
+            return redirect()->to(base_url('restaurantes'))->with('error', 'Restaurante não encontrado.');
+        }
+
+        $dados = $this->request->getPost();
+
+        // Se quiser permitir alteração de senha, deve fazer verificação e hash aqui.
+        unset($dados['senha']); // Proteção, caso não queira alterar a senha diretamente.
+
+        $this->restaurantesModel->update($id, $dados);
+
+        return redirect()->to(base_url('restaurantes'))->with('success', 'Dados do restaurante atualizados com sucesso!');
+    }
 }

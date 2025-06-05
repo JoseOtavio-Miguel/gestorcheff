@@ -80,3 +80,4 @@ class Restaurantes extends Migration
         $this->forge->dropTable('restaurantes');
     }
 }
+

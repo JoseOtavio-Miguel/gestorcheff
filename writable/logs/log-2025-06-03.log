@@ -1,0 +1,358 @@
+INFO - 2025-06-03 00:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:32:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "restaurante/painel-restaurante.php"
+[Method: GET, Route: cardapio/painel]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('restaurante/painel-restaurante.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurante/painel-restaurante', [], true)
+ 3 APPPATH\Controllers\Cardapio.php(27): view('restaurante/painel-restaurante')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:33:30 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/painel]
+in APPPATH\Views\restaurantes\painel-restaurante.php on line 4.
+ 1 APPPATH\Views\restaurantes\painel-restaurante.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/painel-restaurante', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(27): view('restaurantes/painel-restaurante')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:33:31 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/painel]
+in APPPATH\Views\restaurantes\painel-restaurante.php on line 4.
+ 1 APPPATH\Views\restaurantes\painel-restaurante.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/painel-restaurante', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(27): view('restaurantes/painel-restaurante')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:33:32 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/painel]
+in APPPATH\Views\restaurantes\painel-restaurante.php on line 4.
+ 1 APPPATH\Views\restaurantes\painel-restaurante.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/painel-restaurante', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(27): view('restaurantes/painel-restaurante')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:34:34 --> ErrorException: Undefined variable $restauranteId
+[Method: GET, Route: cardapio/painel]
+in APPPATH\Controllers\Cardapio.php on line 28.
+ 1 APPPATH\Controllers\Cardapio.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteId', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Cardapio.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:34:35 --> ErrorException: Undefined variable $restauranteId
+[Method: GET, Route: cardapio/painel]
+in APPPATH\Controllers\Cardapio.php on line 28.
+ 1 APPPATH\Controllers\Cardapio.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteId', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Cardapio.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:40:56 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/painel/1]
+in APPPATH\Views\restaurantes\painel-restaurante.php on line 4.
+ 1 APPPATH\Views\restaurantes\painel-restaurante.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/painel-restaurante', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(27): view('restaurantes/painel-restaurante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:41:48 --> ArgumentCountError: Too few arguments to function App\Controllers\Cardapio::painel(), 1 passed in C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: cardapio/painel/1]
+in APPPATH\Controllers\Cardapio.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:41:49 --> ArgumentCountError: Too few arguments to function App\Controllers\Cardapio::painel(), 1 passed in C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: cardapio/painel/1]
+in APPPATH\Controllers\Cardapio.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:41:49 --> ArgumentCountError: Too few arguments to function App\Controllers\Cardapio::painel(), 1 passed in C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: cardapio/painel/1]
+in APPPATH\Controllers\Cardapio.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:43:11 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/1]
+in APPPATH\Views\cardapio\index.php on line 15.
+ 1 APPPATH\Views\cardapio\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cardapio/index', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(18): view('cardapio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:43:18 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/1]
+in APPPATH\Views\cardapio\index.php on line 15.
+ 1 APPPATH\Views\cardapio\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cardapio/index', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(18): view('cardapio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:44:17 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/1]
+in APPPATH\Views\cardapio\index.php on line 15.
+ 1 APPPATH\Views\cardapio\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cardapio/index', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(18): view('cardapio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:44:18 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/1]
+in APPPATH\Views\cardapio\index.php on line 15.
+ 1 APPPATH\Views\cardapio\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cardapio/index', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(18): view('cardapio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:44:18 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/1]
+in APPPATH\Views\cardapio\index.php on line 15.
+ 1 APPPATH\Views\cardapio\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cardapio/index', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(18): view('cardapio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:44:24 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/1]
+in APPPATH\Views\cardapio\index.php on line 15.
+ 1 APPPATH\Views\cardapio\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cardapio/index', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(18): view('cardapio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:45:22 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/1]
+in APPPATH\Views\cardapio\index.php on line 15.
+ 1 APPPATH\Views\cardapio\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cardapio/index', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(18): view('cardapio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:45:23 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/1]
+in APPPATH\Views\cardapio\index.php on line 15.
+ 1 APPPATH\Views\cardapio\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cardapio/index', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(18): view('cardapio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:45:24 --> ErrorException: Undefined variable $restauranteNome
+[Method: GET, Route: cardapio/1]
+in APPPATH\Views\cardapio\index.php on line 15.
+ 1 APPPATH\Views\cardapio\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteNome', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\cardapio\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('cardapio/index', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(18): view('cardapio/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-03 00:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-03 00:46:08 --> ArgumentCountError: Too few arguments to function App\Controllers\Cardapio::painel(), 1 passed in C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: cardapio/painel/1]
+in APPPATH\Controllers\Cardapio.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:47:14 --> ErrorException: Undefined variable $restauranteId
+[Method: GET, Route: cardapio/painel/1]
+in APPPATH\Views\restaurantes\painel-restaurante.php on line 5.
+ 1 APPPATH\Views\restaurantes\painel-restaurante.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteId', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/painel-restaurante', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(27): view('restaurantes/painel-restaurante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:47:15 --> ErrorException: Undefined variable $restauranteId
+[Method: GET, Route: cardapio/painel/1]
+in APPPATH\Views\restaurantes\painel-restaurante.php on line 5.
+ 1 APPPATH\Views\restaurantes\painel-restaurante.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteId', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/painel-restaurante', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(27): view('restaurantes/painel-restaurante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-03 00:47:17 --> ErrorException: Undefined variable $restauranteId
+[Method: GET, Route: cardapio/painel/1]
+in APPPATH\Views\restaurantes\painel-restaurante.php on line 5.
+ 1 APPPATH\Views\restaurantes\painel-restaurante.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $restauranteId', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\restaurantes\\painel-restaurante.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('restaurantes/painel-restaurante', [], true)
+ 5 APPPATH\Controllers\Cardapio.php(27): view('restaurantes/painel-restaurante', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cardapio->painel('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cardapio))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-03 00:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

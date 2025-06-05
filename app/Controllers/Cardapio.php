@@ -11,7 +11,7 @@ class Cardapio extends BaseController
 
     public function index($restauranteId)
     {
-        // Pega os itens do restaurante (se quiser listar eles já)
+        // Pega os itens do restaurante 
         $itensCardapioModel = new \App\Models\ItensCardapioModel();
         $itens = $itensCardapioModel->where('restaurante_id', $restauranteId)->findAll();
 
@@ -22,11 +22,19 @@ class Cardapio extends BaseController
     }
 
 
+    public function painel($restauranteId)
+    {
+        return view('restaurantes/painel-restaurante', [
+            'restauranteId' => $restauranteId,
+        ]);
+    }
+
+
 
     public function novo($restauranteId)
     {
         return view('cardapio/cadastrar-cardapio', [
-            'restauranteId' => $restauranteId
+            'restauranteId' => $restauranteId,
         ]);
     }
 
@@ -43,7 +51,7 @@ class Cardapio extends BaseController
             'disponivel' => $this->request->getPost('disponivel'),
         ];
 
-        // Aqui você pode tratar upload de imagem também
+        // Tratar as imagens enviadas para o item do cardápio
 
         $model->save($data);
 

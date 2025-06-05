@@ -1,14 +1,17 @@
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?>
 
-<h1>Bem-vindo, <?= esc($restauranteNome) ?>!</h1>
-<p>Seu ID é: <?= esc($restauranteId) ?></p>
+
 
 
 <div class="container py-5">
     <h1 class="painel-title text-center mb-5 fw-bold">
-    Seu Painel de Controle</i>
+        Bem-vindo!
     </h1>
+    <h2 class="painel-title text-center mb-5 fw-bold">
+        Ao Gestor Cheff
+        Seu Painel de Controle</i>
+    </h2>
 
 
     <?php if (session()->getFlashdata('success')): ?>
@@ -42,7 +45,7 @@
                     </div>
                     <h4 class="fw-bold">Pedidos</h4>
                     <p class="text-muted">Acompanhe os pedidos recebidos.</p>
-                    <a href="<?= base_url('pedidos') ?>" class="btn-custom btn btn-danger w-75 mt-3">Ver Pedidos</a>
+                    <a href="<?= base_url('pedidos/' . $restauranteId) ?>" class="btn-custom btn btn-danger w-75 mt-3">Ver Pedidos</a>
                 </div>
             </div>
         </div>
@@ -68,7 +71,7 @@
                     </div>
                     <h4 class="fw-bold">Perfil</h4>
                     <p class="text-muted">Atualize seus dados e preferências.</p>
-                    <a href="<?= base_url('restaurantes/perfil') ?>" class="btn-custom btn btn-danger w-75 mt-3">Editar Perfil</a>
+                    <a href="<?= base_url('restaurantes/editar/' . $restauranteId) ?>" class="btn-custom btn btn-danger w-75 mt-3">Editar Perfil</a>
                 </div>
             </div>
         </div>
