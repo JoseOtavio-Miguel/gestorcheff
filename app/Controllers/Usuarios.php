@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\UsuariosModel; // correto!
-use CodeIgniter\Controller; // ou BaseController, depende de onde herdou
+use App\Models\UsuariosModel; 
+use App\Models\EnderecoModel;
+use CodeIgniter\Controller; 
 
 class Usuarios extends BaseController
 {
@@ -24,27 +25,47 @@ class Usuarios extends BaseController
         return view('usuarios/cadastro-usuario');
     }
 
-    // Retorna a página com informações do usuário
+    public function atualizar($id)
+    {
+        $usuarioModel = new \App\Models\UsuarioModel();
+
+        $data = $this->request->getPost([
+            'nome', 'sobrenome', 'datanascimento', 'email', 'telefone'
+        ]);
+
+        // Validação simples (você pode adaptar para usar rules do CI4)
+        if (!$usuarioModel->update($id, $data)) {
+            return redirect()->back()->with('errors', $usuarioModel->errors());
+        }
+
+        return redirect()->to('/usuarios/perfil')->with('success', 'Perfil atualizado com sucesso!');
+    }
+
+
+
     public function informacao()
     {
-        // Exemplo: pegar id do usuário logado na sessão
         $usuarioId = session()->get('usuario_id');
-        
+
         if (!$usuarioId) {
             return redirect()->to('/usuarios/login');
         }
 
-
         $usuarioModel = new UsuariosModel();
+        $enderecoModel = new EnderecoModel();
+
         $usuario = $usuarioModel->find($usuarioId);
 
         if (!$usuario) {
-            // Se usuário não encontrado, trate o erro
             throw new \Exception('Usuário não encontrado');
         }
 
-        // Passa o array $usuario para a view
-        return view('usuarios/informacao-usuario', ['usuario' => $usuario]);
+        $enderecos = $enderecoModel->where('usuario_id', $usuarioId)->findAll();
+
+        return view('usuarios/informacao-usuario', [
+            'usuario'   => $usuario,
+            'enderecos' => $enderecos // <-- Enviando para a view
+        ]);
     }
 
 
@@ -79,8 +100,28 @@ class Usuarios extends BaseController
     // Cadastra o Usuário no Banco de Dados
     // Cadastra o Usuário no Banco de Dados
     public function cadastrar()
-        {
+    {
+        // Verifica se o usuário já está logado
         $usuarios = new UsuariosModel();
+    
+        $validation = \Config\Services::validation();
+    
+        // Verifica se o usuário já está logado
+        $rules = [
+            'nome' => 'required|min_length[3]|max_length[50]',
+            'sobrenome' => 'required|min_length[3]|max_length[50]',
+            'email' => 'required|valid_email|is_unique[usuarios.email]',
+            'telefone' => 'permit_empty|max_length[20]',
+            'cpf' => 'required|validaCPF|is_unique[usuarios.cpf]',
+            'datanascimento' => 'required|valid_date',
+            'senha' => 'required|min_length[8]',
+            'confirmasenha' => 'required|matches[senha]'
+        ];
+        
+        // Define as mensagens de erro personalizadas
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('validation', $this->validator);
+        }
 
         // Pega os dados do formulário
         $data = [
@@ -93,8 +134,10 @@ class Usuarios extends BaseController
             'senha'           => password_hash($this->request->getPost('senha'), PASSWORD_DEFAULT), // senha criptografada
         ];
 
-        $usuarios->save($data);
-
+        
+        $usuarios->save($data); 
+        
+        // Redireciona para a página de login com uma mensagem de sucesso
         return redirect()->to('/usuarios/login')->with('success', 'Usuário cadastrado com sucesso! Faça o login.');
     }
 
@@ -139,4 +182,17 @@ class Usuarios extends BaseController
         session()->destroy();
         return redirect()->to(base_url('usuarios/login'))->with('success', 'Você saiu com sucesso.');
     }
+
+    public function editar($id)
+    {
+        $usuarioModel = new \App\Models\UsuarioModel();
+        $usuario = $usuarioModel->find($id);
+
+        if (!$usuario) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Usuário não encontrado');
+        }
+
+        return view('usuarios/editar', ['usuario' => $usuario]);
+    }
+
 }

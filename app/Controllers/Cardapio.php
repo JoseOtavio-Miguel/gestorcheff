@@ -76,7 +76,7 @@ class Cardapio extends BaseController
         if ($imagem && $imagem->isValid() && !$imagem->hasMoved()) {
             $nomeImagem = $imagem->getRandomName();
 
-            $uploadPath = FCPATH . 'uploads/'; // pasta pública para acesso direto
+            $uploadPath = FCPATH . 'uploads/cardapio/'; // pasta pública para acesso direto
             if (!is_dir($uploadPath)) {
                 mkdir($uploadPath, 0755, true);
             }
@@ -89,7 +89,8 @@ class Cardapio extends BaseController
                 ->resize(400, 300, true, 'width')
                 ->save($caminhoFinal);
 
-            $data['imagem'] = $nomeImagem;
+            $data['imagem'] = 'uploads/cardapio/' . $nomeImagem;
+
         }
 
         $model->save($data);

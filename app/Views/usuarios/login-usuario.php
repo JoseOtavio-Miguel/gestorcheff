@@ -1,8 +1,8 @@
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?>
 
-<div style="margin-top: 80px;"> <!-- <-- Começa aqui -->
-    <div class="container mt-5">
+<div style="background: linear-gradient(135deg, #fde0c4, #f9c19b); padding-top: 80px; min-height: 100vh;">
+    <div class="container mt-5 pb-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card shadow-lg border-0 rounded-4">
@@ -10,7 +10,6 @@
                         <h2 class="mb-0 text-white"><i class="bi bi-box-arrow-in-right"></i> Login do Usuário</h2>
                     </div>
                     <div class="card-body p-5">
-
                         <!-- Mensagens de erro ou sucesso -->
                         <?php if (session()->getFlashdata('error')): ?>
                             <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
@@ -47,20 +46,17 @@
                                 <a href="<?= base_url('usuarios/cadastro') ?>" class="btn btn-link">Criar Conta</a>
                                 <a href="<?= base_url('usuarios/esqueci-senha') ?>" class="btn btn-link">Esqueceu a Senha?</a>
                             </div>
-
                         </form>
                     </div>
-
-                    <div class="card-footer text-center bg-light">
-                        <small class="text-muted">
-                            © <?= date('Y') ?> GestorCheff - Seu restaurante mais ágil e moderno!
-                        </small>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-</div> <!-- <-- Fecha aqui -->
+</div>
+
+<!-- Footer global fora da div principal -->
+<footer class="bg-dark text-white text-center py-3">
+    <small>© <?= date('Y') ?> GestorCheff - Simplificando a Gestão de Restaurantes</small>
+</footer>
 
 <?= $this->endSection() ?>

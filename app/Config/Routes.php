@@ -56,6 +56,10 @@ $routes->get('usuarios/logout', 'Usuarios::logout');
 // Informações do Usuário 
 $routes->get('usuarios/informacao', 'Usuarios::informacao');
 
+$routes->get('usuarios/editar/(:num)', 'Usuarios::editar/$1');
+
+
+
 
 
 /* Bloco Cardapio */
@@ -86,3 +90,18 @@ $routes->get('usuarios/painelUsuario', 'Usuarios::painelUsuario');
 $routes->get('cardapio/editar/(:num)', 'Cardapio::editar/$1');
 $routes->post('cardapio/atualizar/(:num)', 'Cardapio::atualizar/$1');
 $routes->get('cardapio/listar/(:num)', 'Cardapio::listar/$1');
+
+
+/* Bloco Endereço */
+// Página de Cadastro do Endereço
+$routes->post('endereco/salvar', 'Endereco::salvar');
+
+// Página de Exclusao do Endereço
+$routes->post('endereco/excluir/(:num)', 'Endereco::excluir/$1');
+
+
+// Salvar Endereço do Usuário
+$routes->get('/endereco/perfil', 'Endereco::perfil');
+
+// Página de Edição do Endereço
+$routes->post('endereco/atualizar/(:num)', 'Endereco::atualizar/$1');

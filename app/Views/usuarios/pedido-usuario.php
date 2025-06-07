@@ -1,224 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Cardápio - GestorCheff</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     
     <!-- Ícones Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
     <!-- Estilo Personalizado -->
+    <link href="<?= base_url('css/pedido-usuario.css') ?>" type="text/css" rel="stylesheet" />
     <style>
-        :root {
-            --primary-color: #bb4a04;
-            --secondary-color: #f8f9fa;
-            --text-color: #333;
-            --light-gray: #f5f5f5;
+        /* Estilo adicional para os seletores de quantidade */
+        .quantidade-selector {
+            width: 70px;
+            display: inline-block;
         }
         
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light-gray);
-            color: var(--text-color);
-        }
-        
-        .header-cardapio {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 5rem 0;
-            margin-bottom: 3rem;
+        .quantidade-selector input {
             text-align: center;
-            border-radius: 0 0 20px 20px;
+            padding: 0.25rem;
         }
         
-        .categoria-title {
-            margin: 3rem 0 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--primary-color);
-            font-weight: 600;
-            color: var(--primary-color);
-            position: relative;
-        }
-        
-        .categoria-title::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100px;
-            height: 2px;
-            background-color: var(--primary-color);
-        }
-        
+        /* Ajustes para os cards de itens */
         .card-item {
-            border: none;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.2s;
             height: 100%;
-            background-color: white;
+            display: flex;
+            flex-direction: column;
         }
         
         .card-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-        }
-        
-        .card-img-top {
-            height: 180px;
-            object-fit: cover;
-            width: 100%;
         }
         
         .card-body {
-            padding: 1.5rem;
-        }
-        
-        .card-title {
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            color: var(--primary-color);
-        }
-        
-        .card-text {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-        
-        .price {
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
         
         .btn-add {
-            background-color: var(--primary-color);
-            border: none;
-            border-radius: 8px;
-            padding: 0.5rem 1rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            width: 100%;
-            color: white;
-        }
-        
-        .btn-add:hover {
-            background-color: #9a3e03;
-            transform: translateY(-2px);
-            color: white;
-        }
-        
-        .btn-carrinho {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            color: white;
-            font-size: 1.5rem;
-            box-shadow: 0 5px 20px rgba(187, 74, 4, 0.4);
-            z-index: 1055;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-carrinho:hover {
-            transform: scale(1.1);
-            background-color: #9a3e03;
-            color: white;
-        }
-        
-        .badge-carrinho {
-            position: absolute;
-            top: -5px;
-            right: -5px;
-            background-color: #ff4757;
-            color: white;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-        }
-        
-        .offcanvas-header {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        .offcanvas-title {
-            font-weight: 600;
-        }
-        
-        .btn-close-white {
-            filter: invert(1);
-        }
-        
-        .table-carrinho th {
-            background-color: var(--light-gray);
-        }
-        
-        .btn-remove {
-            padding: 0.25rem 0.5rem;
-            font-size: 0.8rem;
-        }
-        
-        .total-pedido {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--primary-color);
-        }
-        
-        .btn-finalizar {
-            background-color: var(--primary-color);
-            border: none;
-            padding: 0.75rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            color: white;
-        }
-        
-        .btn-finalizar:hover {
-            background-color: #9a3e03;
-            transform: translateY(-2px);
-            color: white;
-        }
-        
-        .empty-cart {
-            text-align: center;
-            padding: 2rem;
-            color: #666;
-        }
-        
-        .empty-cart i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #ddd;
-        }
-        
-        .cardapio-image {
-            max-width: 200px;
-            margin: 0 auto 2rem;
-            display: block;
+            margin-top: auto;
         }
     </style>
 </head>
@@ -230,7 +59,7 @@
     <!-- Cabeçalho do Cardápio -->
     <div class="header-cardapio">
         <div class="container">
-            <img src="https://cdn-icons-png.flaticon.com/512/706/706164.png" alt="Ícone de cardápio" class="cardapio-image">
+            <img src="https://cdn-icons-png.flaticon.com/512/706/706164.png" alt="Ícone de cardápio" class="cardapio-image" />
             <h1 class="display-4 fw-bold mb-3">Cardápio Digital</h1>
             <p class="lead mb-0">Sabores que encantam, experiências que ficam</p>
         </div>
@@ -254,17 +83,25 @@
             <div class="row g-4">
                 <?php foreach ($itens as $item): ?>
                     <div class="col-md-4 col-lg-3">
-                        <div class="card-item">
-                            <img src="<?= $item['imagem'] ?? 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80' ?>" 
-                                class="card-img-top" alt="<?= esc($item['nome']) ?>">
+                        <div class="card-item shadow-sm">
+                            <img src="<?= base_url(!empty($item['imagem']) ? $item['imagem'] : 'uploads/cardapio/default.png') ?>"
+                                class="card-img-top img-fluid"
+                                alt="<?= esc($item['nome']) ?>" />
                             <div class="card-body">
                                 <h5 class="card-title"><?= esc($item['nome']) ?></h5>
-                                <p class="card-text"><?= esc($item['descricao']) ?></p>
-                                <div class="price">R$ <?= number_format($item['preco'], 2, ',', '.') ?></div>
-                                <button class="btn btn-add"
-                                        onclick="adicionarItem(<?= $item['id'] ?>, '<?= esc($item['nome']) ?>', <?= $item['preco'] ?>)">
-                                    <i class="bi bi-cart-plus me-2"></i>Adicionar
-                                </button>
+                                <p class="card-text text-muted"><?= esc($item['descricao']) ?></p>
+                                <div class="price fw-bold mb-2">R$ <?= number_format($item['preco'], 2, ',', '.') ?></div>
+                                <div class="d-flex align-items-center mt-auto">
+                                    <div class="quantidade-selector me-2">
+                                        <input type="number" min="1" max="20" value="1" 
+                                            class="form-control form-control-sm quantidade-input" 
+                                            id="qtd-<?= $item['id'] ?>">
+                                    </div>
+                                    <button class="btn btn-add btn-sm flex-grow-1"
+                                        onclick="adicionarItem(event, <?= $item['id'] ?>, '<?= esc($item['nome']) ?>', <?= $item['preco'] ?>, '<?= esc($item['descricao']) ?>')">
+                                        <i class="bi bi-cart-plus me-2"></i>Adicionar
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -274,22 +111,21 @@
     </div>
 
     <!-- Botão flutuante do carrinho -->
-    <button class="btn-carrinho"
-            data-bs-toggle="offcanvas" data-bs-target="#carrinhoOffcanvas">
+    <button class="btn-carrinho" data-bs-toggle="offcanvas" data-bs-target="#carrinhoOffcanvas" aria-label="Abrir carrinho">
         <i class="bi bi-cart3"></i>
         <span class="badge-carrinho" id="contadorItens">0</span>
     </button>
 
     <!-- Offcanvas do carrinho -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="carrinhoOffcanvas" aria-labelledby="carrinhoLabel">
-        <div class="offcanvas-header">
+        <div class="offcanvas-header bg-primary text-white">
             <h5 class="offcanvas-title" id="carrinhoLabel">
                 <i class="bi bi-cart3 me-2"></i>Seu Pedido
             </h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
         </div>
         <div class="offcanvas-body">
-            <form action="<?= base_url('pedidos/salvar') ?>" method="post">
+            <form action="<?= base_url('pedidos/salvar') ?>" method="post" novalidate>
                 <div id="carrinhoConteudo">
                     <table class="table table-carrinho" id="tabelaPedido">
                         <thead>
@@ -302,18 +138,18 @@
                         </thead>
                         <tbody></tbody>
                     </table>
-                    <div id="carrinhoVazio" class="empty-cart">
-                        <i class="bi bi-cart-x"></i>
-                        <p>Seu carrinho está vazio</p>
+                    <div id="carrinhoVazio" class="empty-cart text-center py-5">
+                        <i class="bi bi-cart-x fs-1 text-muted"></i>
+                        <p class="text-muted mt-2">Seu carrinho está vazio</p>
                     </div>
                 </div>
                 
                 <div class="d-flex justify-content-between align-items-center my-4">
-                    <strong class="total-pedido">Total: R$ <span id="totalPedido">0.00</span></strong>
+                    <strong class="total-pedido fs-5">Total: R$ <span id="totalPedido">0,00</span></strong>
                 </div>
                 
-                <input type="hidden" name="itens" id="inputItens">
-                <button type="submit" class="btn btn-finalizar w-100" id="btnFinalizar" disabled>
+                <input type="hidden" name="itens" id="inputItens" />
+                <button type="submit" class="btn btn-primary btn-lg w-100" id="btnFinalizar" disabled>
                     <i class="bi bi-check-circle me-2"></i>Finalizar Pedido
                 </button>
             </form>
@@ -321,8 +157,8 @@
     </div>
 
     <!-- Rodapé -->
-    <footer class="mt-5">
-        <div class="container py-3">
+    <footer class="mt-5 bg-light py-3">
+        <div class="container text-center">
             <small>© <?= date('Y') ?> GestorCheff - Simplificando a Gestão de Restaurantes</small>
         </div>
     </footer>
@@ -336,30 +172,45 @@
         const tabelaPedido = document.getElementById('tabelaPedido');
         const btnFinalizar = document.getElementById('btnFinalizar');
 
-        function adicionarItem(id, nome, preco) {
+        function adicionarItem(event, id, nome, preco, descricao) {
+            event.preventDefault();
+            const btn = event.currentTarget;
+            const quantidade = parseInt(document.getElementById(`qtd-${id}`).value) || 1;
+
             const existente = pedido.find(item => item.id === id);
             if (existente) {
-                existente.quantidade++;
+                existente.quantidade += quantidade;
             } else {
-                pedido.push({ id, nome, preco, quantidade: 1 });
+                pedido.push({ id, nome, preco, descricao, quantidade });
             }
             renderPedido();
-            
-            // Feedback visual
-            const btn = event.target;
+
+            // Feedback visual no botão
             btn.innerHTML = '<i class="bi bi-check2 me-2"></i>Adicionado';
-            btn.classList.remove('btn-add');
+            btn.classList.remove('btn-primary');
             btn.classList.add('btn-success');
             setTimeout(() => {
-                btn.innerHTML = '<i class="bi bi-cart-plus me-2"></i>Adicionar';
+                btn.innerHTML = `<i class="bi bi-cart-plus me-2"></i>Adicionar`;
                 btn.classList.remove('btn-success');
-                btn.classList.add('btn-add');
+                btn.classList.add('btn-primary');
             }, 1000);
         }
 
         function removerItem(id) {
             pedido = pedido.filter(item => item.id !== id);
             renderPedido();
+        }
+
+        function atualizarQuantidade(id, novaQuantidade) {
+            const item = pedido.find(i => i.id === id);
+            if (item) {
+                if (novaQuantidade < 1) {
+                    removerItem(id);
+                } else {
+                    item.quantidade = novaQuantidade;
+                    renderPedido();
+                }
+            }
         }
 
         function renderPedido() {
@@ -379,12 +230,20 @@
 
                 const tr = document.createElement("tr");
                 tr.innerHTML = `
-                    <td>${item.nome}</td>
-                    <td>${item.quantidade}</td>
-                    <td>R$ ${subtotal.toFixed(2)}</td>
+                    <td>
+                        <strong>${item.nome}</strong><br/>
+                        <small class="text-muted">${item.descricao}</small>
+                    </td>
+                    <td>
+                        <input type="number" min="1" max="20" value="${item.quantidade}" 
+                            class="form-control form-control-sm quantidade-carrinho" 
+                            onchange="atualizarQuantidade(${item.id}, parseInt(this.value))"
+                            style="width: 70px;">
+                    </td>
+                    <td>R$ ${subtotal.toFixed(2).replace('.', ',')}</td>
                     <td class="text-end">
-                        <button type="button" class="btn btn-outline-danger btn-remove" 
-                                onclick="removerItem(${item.id})">
+                        <button type="button" class="btn btn-outline-danger btn-sm btn-remove" 
+                                onclick="removerItem(${item.id})" aria-label="Remover ${item.nome}">
                             <i class="bi bi-trash"></i>
                         </button>
                     </td>
@@ -392,11 +251,10 @@
                 tbody.appendChild(tr);
             });
 
-            totalSpan.textContent = total.toFixed(2);
+            totalSpan.textContent = total.toFixed(2).replace('.', ',');
             contador.textContent = totalItens;
             inputItens.value = JSON.stringify(pedido);
-            
-            // Mostra/oculta elementos conforme o carrinho
+
             if (pedido.length > 0) {
                 carrinhoVazio.style.display = 'none';
                 tabelaPedido.style.display = 'table';
