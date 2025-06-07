@@ -47,8 +47,8 @@
                     <div class="col-md-6 d-flex">
                         <div class="main-block w-100 d-flex flex-column justify-content-between">
                             <div>
-                                <h4 class="mb-3 text-primary"><i class="bi bi-person-circle"></i> Login</h4>
-                                <p>Acesse o sistema e gerencie seu restaurante!</p>
+                                <h4 class="mb-3 text-primary"><i class="bi bi-person-circle"></i> Login Usuário</h4>
+                                <p>Acesse o sistema e Faça seus Pedidos!</p>
                             </div>
                             <a href="<?= base_url('usuarios/login') ?>" class="btn btn-primary btn-lg w-100 mt-3">
                                 <i class="bi bi-box-arrow-in-right"></i> Entrar

@@ -14,8 +14,7 @@ class Usuarios extends BaseController
     // Página de Login do Usuario
     public function login()
     {
-        return redirect()->to(base_url('/usuarios/painelUsuario'))->with('success', 'Login realizado com sucesso!');
-
+        return view('usuarios/login-usuario');
     }
     
 
@@ -26,15 +25,52 @@ class Usuarios extends BaseController
     }
 
     // Retorna a página com informações do usuário
-    public function information(): string
+    public function informacao()
     {
-        return view('users/information');
+        // Exemplo: pegar id do usuário logado na sessão
+        $usuarioId = session()->get('usuario_id');
+        
+        if (!$usuarioId) {
+            return redirect()->to('/usuarios/login');
+        }
+
+
+        $usuarioModel = new UsuariosModel();
+        $usuario = $usuarioModel->find($usuarioId);
+
+        if (!$usuario) {
+            // Se usuário não encontrado, trate o erro
+            throw new \Exception('Usuário não encontrado');
+        }
+
+        // Passa o array $usuario para a view
+        return view('usuarios/informacao-usuario', ['usuario' => $usuario]);
     }
+
+
 
     public function painelUsuario()
     {
-        return view('usuarios/painel-usuario');
+        // Pega o ID do usuário da sessão
+        $usuarioId = session()->get('usuario_id');
+
+        // Verifica se o usuário está logado
+        // Se não estiver logado, redireciona para a página de login
+        if (!$usuarioId) {
+            return redirect()->to('/usuarios/login');
+        }
+
+
+        $usuarioModel = new UsuariosModel(); // veja que no seu controller é UsuariosModel (plural)
+        $usuario = $usuarioModel->find($usuarioId);
+
+        if (!$usuario) {
+            throw new \Exception('Usuário não encontrado');
+        }
+
+        return view('usuarios/painel-usuario', ['usuario' => $usuario]);
     }
+        
 
 
 
@@ -81,11 +117,13 @@ class Usuarios extends BaseController
             // Confere a senha
             if (password_verify($senha, $usuario['senha'])) {
                 $sessionData = [
-                    'id' => $usuario['id'],
+                    'usuario_id' => $usuario['id'],
                     'nome' => $usuario['nome'],
                     'email' => $usuario['email'],
                     'logged_in' => true
                 ];
+                $session->set($sessionData);
+
                 $session->set($sessionData);
                 return redirect()->to(base_url('/usuarios/painelUsuario'))->with('success', 'Login realizado com sucesso!');
             } else {

@@ -83,8 +83,9 @@
                                 <p>Veja suas informações e atualize quando necessário.</p>
                             </div>
                             <a href="<?= base_url('usuarios/informacao') ?>" class="btn btn-info btn-lg w-100 mt-3">
-                                <i class="bi bi-person-vcard"></i> Ver Meus Dados
-                            </a>
+                            <i class="bi bi-person-vcard"></i> Ver Meus Dados
+                        </a>
+
                         </div>
                     </div>
 

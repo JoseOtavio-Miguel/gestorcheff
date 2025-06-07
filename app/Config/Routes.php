@@ -54,7 +54,7 @@ $routes->post('usuarios/logar', 'Usuarios::logar');
 $routes->get('usuarios/logout', 'Usuarios::logout');
 
 // Informações do Usuário 
-$routes->get('usuarios/informacao', 'Usuarios::info');
+$routes->get('usuarios/informacao', 'Usuarios::informacao');
 
 
 
@@ -81,3 +81,8 @@ $routes->get('relatorios', 'Relatorios::index');
 $routes->get('pedidos/(:num)', 'Pedidos::index/$1');
 
 $routes->get('usuarios/painelUsuario', 'Usuarios::painelUsuario');
+
+
+$routes->get('cardapio/editar/(:num)', 'Cardapio::editar/$1');
+$routes->post('cardapio/atualizar/(:num)', 'Cardapio::atualizar/$1');
+$routes->get('cardapio/listar/(:num)', 'Cardapio::listar/$1');
