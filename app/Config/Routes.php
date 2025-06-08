@@ -142,3 +142,25 @@ $routes->post('pedidos/salvar', 'Pedidos::salvar');
 
 // Página de Relatórios
 $routes->get('relatorios', 'Relatorios::index');
+
+
+// Rotas de Pedidos (adicionar no seu arquivo app/Config/Routes.php)
+
+$routes->group('pedidos', function($routes) {
+    // Rastreamento de pedidos pelo usuário
+    $routes->get('rastrear', 'Pedidos::rastrear', ['as' => 'usuario.pedidos']);
+    
+    // Detalhes de um pedido específico
+    $routes->get('detalhes/(:num)', 'Pedidos::detalhes/$1', ['as' => 'usuario.pedidos.detalhes']);
+    
+    // Cancelamento de pedido (via AJAX)
+    $routes->post('cancelar', 'Pedidos::cancelar', ['as' => 'usuario.pedidos.cancelar']);
+    
+    // Salvar novo pedido (usado no checkout)
+    $routes->post('salvar', 'Pedidos::salvar', ['as' => 'usuario.pedidos.salvar']);
+});
+
+// Rotas para o restaurante ver seus pedidos (se necessário)
+$routes->group('restaurante', function($routes) {
+    $routes->get('pedidos/(:num)', 'Pedidos::index/$1', ['as' => 'restaurante.pedidos']);
+});

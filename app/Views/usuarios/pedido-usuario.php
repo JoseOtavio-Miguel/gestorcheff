@@ -50,7 +50,13 @@
             margin-top: auto;
         }
         
-        /* Estilo para os endereços no modal */
+        /* Estilo para a seção de endereços */
+        .selecao-endereco {
+            border-top: 1px solid #dee2e6;
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
         .endereco-option {
             border: 1px solid #dee2e6;
             border-radius: 5px;
@@ -68,10 +74,6 @@
         .endereco-option.selected {
             background-color: #e7f1ff;
             border-color: #0d6efd;
-        }
-        
-        .endereco-detalhes {
-            margin-left: 10px;
         }
     </style>
 </head>
@@ -197,120 +199,44 @@
                     <strong class="total-pedido fs-5">Total: R$ <span id="totalPedido">0,00</span></strong>
                 </div>
 
-                <button type="button" class="btn btn-primary btn-lg w-100" id="btnFinalizar" disabled data-bs-toggle="modal" data-bs-target="#modalEnderecos">
-                    <i class="bi bi-check-circle me-2"></i>Finalizar Pedido
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Modal de seleção de endereço -->
-    <div class="modal fade" id="modalEnderecos" tabindex="-1" aria-labelledby="modalEnderecosLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="modalEnderecosLabel">
-                        <i class="bi bi-geo-alt me-2"></i>Selecione o endereço de entrega
-                    </h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body">
+                <!-- Seção de Seleção de Endereço -->
+                <div class="selecao-endereco" id="selecaoEndereco" style="display: none;">
+                    <h5 class="mb-3"><i class="bi bi-geo-alt me-2"></i>Endereço de Entrega</h5>
+                    
                     <?php if (empty($enderecos)): ?>
                         <div class="alert alert-warning">
                             Nenhum endereço cadastrado. Por favor, cadastre um endereço antes de finalizar o pedido.
                         </div>
                     <?php else: ?>
-                        <ul class="list-group">
+                        <div class="mb-3">
                             <?php foreach ($enderecos as $endereco): ?>
-                                <li class="list-group-item d-flex justify-content-between align-items-start flex-column flex-md-row">
-                                    <div class="me-md-auto">
-                                        <input type="radio" name="endereco" value="<?= $endereco['id'] ?>" class="form-check-input me-2" onclick="selecionarEndereco(this.closest('li'), <?= $endereco['id'] ?>)">
-                                        <?= esc($endereco['logradouro']) ?>, <?= esc($endereco['numero']) ?>
-                                        <?= esc($endereco['bairro']) ?>, <?= esc($endereco['cidade']) ?>/<?= esc($endereco['estado']) ?><br>
-                                        <small class="text-muted">CEP: <?= esc($endereco['cep']) ?></small>
+                                <div class="endereco-option" onclick="selecionarEndereco(this, <?= $endereco['id'] ?>)">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="endereco" 
+                                            id="endereco-<?= $endereco['id'] ?>" value="<?= $endereco['id'] ?>">
+                                        <label class="form-check-label" for="endereco-<?= $endereco['id'] ?>">
+                                            <strong><?= esc($endereco['apelido'] ?? 'Endereço') ?></strong>
+                                        </label>
                                     </div>
-                                    <div class="mt-2 mt-md-0 d-flex align-items-center gap-2">
-                                        <!-- Botão Editar -->
-                                        <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalEditarEndereco<?= $endereco['id'] ?>">
-                                            <i class="bi bi-pencil-square"></i>
-                                        </button>
-
-                                        <!-- Botão Excluir -->
-                                        <form action="<?= base_url('endereco/excluir/' . $endereco['id']) ?>" method="post" class="d-inline" onsubmit="return confirm('Tem certeza que deseja excluir este endereço?')">
-                                            <?= csrf_field() ?>
-                                            <button type="submit" class="btn btn-sm btn-outline-danger">
-                                                <i class="bi bi-trash"></i>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </li>
-
-                                <!-- Modal de edição individual (um por endereço) -->
-                                <div class="modal fade" id="modalEditarEndereco<?= $endereco['id'] ?>" tabindex="-1" aria-labelledby="modalEditarLabel<?= $endereco['id'] ?>" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <form action="<?= base_url('endereco/editar/' . $endereco['id']) ?>" method="post">
-                                                <?= csrf_field() ?>
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="modalEditarLabel<?= $endereco['id'] ?>">
-                                                        Editar Endereço
-                                                    </h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <!-- Campos de edição rápida -->
-                                                    <div class="mb-2">
-                                                        <label class="form-label">Logradouro</label>
-                                                        <input type="text" name="logradouro" class="form-control" value="<?= esc($endereco['logradouro']) ?>" required>
-                                                    </div>
-                                                    <div class="mb-2">
-                                                        <label class="form-label">Número</label>
-                                                        <input type="text" name="numero" class="form-control" value="<?= esc($endereco['numero']) ?>" required>
-                                                    </div>
-                                                    <div class="mb-2">
-                                                        <label class="form-label">Bairro</label>
-                                                        <input type="text" name="bairro" class="form-control" value="<?= esc($endereco['bairro']) ?>" required>
-                                                    </div>
-                                                    <div class="mb-2">
-                                                        <label class="form-label">Cidade</label>
-                                                        <input type="text" name="cidade" class="form-control" value="<?= esc($endereco['cidade']) ?>" required>
-                                                    </div>
-                                                    <div class="mb-2">
-                                                        <label class="form-label">Estado</label>
-                                                        <input type="text" name="estado" class="form-control" value="<?= esc($endereco['estado']) ?>" required>
-                                                    </div>
-                                                    <div class="mb-2">
-                                                        <label class="form-label">CEP</label>
-                                                        <input type="text" name="cep" class="form-control" value="<?= esc($endereco['cep']) ?>" required>
-                                                    </div>
-                                                    <div class="mb-2">
-                                                        <label class="form-label">Complemento</label>
-                                                        <input type="text" name="complemento" class="form-control" value="<?= esc($endereco['complemento']) ?>">
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                                    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                    <div class="endereco-detalhes mt-2">
+                                        <p class="mb-1"><?= esc($endereco['logradouro']) ?>, <?= esc($endereco['numero']) ?></p>
+                                        <p class="mb-1"><?= esc($endereco['bairro']) ?></p>
+                                        <p class="mb-1"><?= esc($endereco['cidade']) ?> - <?= esc($endereco['estado']) ?></p>
+                                        <p class="mb-0">CEP: <?= esc($endereco['cep']) ?></p>
+                                        <?php if (!empty($endereco['complemento'])): ?>
+                                            <p class="mb-0">Complemento: <?= esc($endereco['complemento']) ?></p>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
-                        </ul>
+                        </div>
                     <?php endif; ?>
-
-                    <div class="text-end mt-4">
-                        <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">
-                            <i class="bi bi-x-lg me-1"></i> Cancelar
-                        </button>
-                        <button type="button" class="btn btn-primary" id="btnConfirmarEndereco" disabled>
-                            <i class="bi bi-check-lg me-1"></i> Confirmar Endereço
-                        </button>
-                    </div>
                 </div>
 
-            </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100" id="btnFinalizar" disabled>
+                    <i class="bi bi-check-circle me-2"></i>Finalizar Pedido
+                </button>
+            </form>
         </div>
     </div>
 
@@ -330,80 +256,9 @@
         const tabelaPedido = document.getElementById('tabelaPedido');
         const btnFinalizar = document.getElementById('btnFinalizar');
         const inputItens = document.getElementById('inputItens');
-        const contador = document.getElementById("contadorItens");
-        const formPedido = document.getElementById("formPedido");
-        const enderecoSelecionado = document.getElementById("enderecoSelecionado");
-        const btnConfirmarEndereco = document.getElementById("btnConfirmarEndereco");
-        const listaEnderecos = document.getElementById("listaEnderecos");
-
-        // Modal de endereços - carrega os endereços quando aberto
-        document.getElementById('modalEnderecos').addEventListener('show.bs.modal', function() {
-            carregarEnderecos();
-        });
-
-        function carregarEnderecos() {
-            const usuarioId = <?= session()->get('usuario_id') ?? 0 ?>;
-            
-            if (usuarioId === 0) {
-                listaEnderecos.innerHTML = `
-                    <div class="alert alert-danger">
-                        Você precisa estar logado para visualizar seus endereços.
-                    </div>
-                `;
-                return;
-            }
-
-            // Simulação de requisição AJAX para buscar endereços
-            // Na implementação real, substitua por uma chamada AJAX para seu backend
-            fetch(`<?= base_url('api/enderecos/usuario/') ?>${usuarioId}`)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.length === 0) {
-                        listaEnderecos.innerHTML = `
-                            <div class="alert alert-warning">
-                                Nenhum endereço cadastrado. Por favor, cadastre um endereço antes de finalizar o pedido.
-                            </div>
-                        `;
-                        btnConfirmarEndereco.disabled = true;
-                        return;
-                    }
-
-                    let html = '<div class="row">';
-                    data.forEach(endereco => {
-                        html += `
-                            <div class="col-md-6 mb-3">
-                                <div class="endereco-option" onclick="selecionarEndereco(this, ${endereco.id})">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="endereco" 
-                                            id="endereco-${endereco.id}" value="${endereco.id}">
-                                        <label class="form-check-label" for="endereco-${endereco.id}">
-                                            <strong>${endereco.apelido || 'Endereço'}</strong>
-                                        </label>
-                                    </div>
-                                    <div class="endereco-detalhes mt-2">
-                                        <p class="mb-1">${endereco.logradouro}, ${endereco.numero}</p>
-                                        <p class="mb-1">${endereco.bairro}</p>
-                                        <p class="mb-1">${endereco.cidade} - ${endereco.estado}</p>
-                                        <p class="mb-0">CEP: ${endereco.cep}</p>
-                                        ${endereco.complemento ? `<p class="mb-0">Complemento: ${endereco.complemento}</p>` : ''}
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                    });
-                    html += '</div>';
-                    listaEnderecos.innerHTML = html;
-                })
-                .catch(error => {
-                    console.error('Erro ao carregar endereços:', error);
-                    listaEnderecos.innerHTML = `
-                        <div class="alert alert-danger">
-                            Ocorreu um erro ao carregar seus endereços. Por favor, tente novamente.
-                        </div>
-                    `;
-                    btnConfirmarEndereco.disabled = true;
-                });
-        }
+        const contador = document.getElementById('contadorItens');
+        const enderecoSelecionado = document.getElementById('enderecoSelecionado');
+        const selecaoEndereco = document.getElementById('selecaoEndereco');
 
         function selecionarEndereco(elemento, enderecoId) {
             // Remove a classe 'selected' de todos os endereços
@@ -418,41 +273,39 @@
             const radio = elemento.querySelector('input[type="radio"]');
             radio.checked = true;
             
-            // Habilita o botão de confirmar
-            btnConfirmarEndereco.disabled = false;
-            
             // Armazena o ID do endereço selecionado
             enderecoSelecionado.value = enderecoId;
+            
+            // Habilita o botão de finalizar
+            btnFinalizar.disabled = false;
+            
+            // Feedback visual
+            const toast = document.createElement('div');
+            toast.className = 'position-fixed bottom-0 end-0 p-3';
+            toast.style.zIndex = '11';
+            toast.innerHTML = `
+                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header bg-success text-white">
+                        <strong class="me-auto">Endereço selecionado</strong>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Endereço de entrega definido com sucesso.
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(toast);
+            
+            // Remove o toast após 3 segundos
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
         }
 
-        // Configura o botão de confirmar endereço
-        btnConfirmarEndereco.addEventListener('click', function() {
-            if (!enderecoSelecionado.value) {
-                alert('Por favor, selecione um endereço para entrega');
-                return;
-            }
-            
-            // Fecha o modal
-            const modal = bootstrap.Modal.getInstance(document.getElementById('modalEnderecos'));
-            modal.hide();
-            
-            // Submete o formulário
-            formPedido.submit();
-        });
-
         function adicionarItem(event, id, nome, preco, descricao) {
-            try {
-                event.preventDefault();
-                console.log('Adicionar item:', id, nome, preco, descricao);
-            } catch (err) {
-                console.error('Erro em adicionarItem:', err);
-            }
-
-            let quantidadeInput = document.getElementById(`qtd-${id}`);
-            let quantidade = parseInt(quantidadeInput.value);
-
-            if (isNaN(quantidade) || quantidade < 1) quantidade = 1;
-            if (quantidade > 20) quantidade = 20;
+            event.preventDefault();
+            const btn = event.currentTarget;
+            const quantidade = parseInt(document.getElementById(`qtd-${id}`).value) || 1;
 
             const existente = pedido.find(item => item.id === id);
             if (existente) {
@@ -464,20 +317,14 @@
 
             renderPedido();
 
-            quantidadeInput.value = 1;
-
-            const btn = event.currentTarget;
+            // Feedback visual no botão
             btn.innerHTML = '<i class="bi bi-check2 me-2"></i>Adicionado';
             btn.classList.remove('btn-primary');
             btn.classList.add('btn-success');
-
-            if (btn._timeoutId) clearTimeout(btn._timeoutId);
-
-            btn._timeoutId = setTimeout(() => {
+            setTimeout(() => {
                 btn.innerHTML = `<i class="bi bi-cart-plus me-2"></i>Adicionar`;
                 btn.classList.remove('btn-success');
                 btn.classList.add('btn-primary');
-                btn._timeoutId = null;
             }, 1000);
         }
 
@@ -487,23 +334,21 @@
         }
 
         function atualizarQuantidade(id, novaQuantidade) {
-            if (isNaN(novaQuantidade) || novaQuantidade < 1) {
-                removerItem(id);
-                return;
-            }
-            if (novaQuantidade > 20) novaQuantidade = 20;
-
             const item = pedido.find(i => i.id === id);
             if (item) {
-                item.quantidade = novaQuantidade;
-                renderPedido();
+                if (novaQuantidade < 1) {
+                    removerItem(id);
+                } else {
+                    item.quantidade = Math.min(novaQuantidade, 20);
+                    renderPedido();
+                }
             }
         }
 
         function renderPedido() {
             const tbody = tabelaPedido.querySelector("tbody");
-
             tbody.innerHTML = "";
+
             let total = 0;
             let totalItens = 0;
 
@@ -519,52 +364,50 @@
                         <small class="text-muted">${item.descricao}</small>
                     </td>
                     <td>
-                        <input 
-                            type="number" min="1" max="20" value="${item.quantidade}" 
+                        <input type="number" min="1" max="20" value="${item.quantidade}" 
                             class="form-control form-control-sm quantidade-carrinho" 
                             onchange="atualizarQuantidade(${item.id}, parseInt(this.value))"
                             style="width: 70px;">
                     </td>
                     <td>R$ ${subtotal.toFixed(2).replace('.', ',')}</td>
                     <td class="text-end">
-                        <button 
-                            type="button" 
-                            class="btn btn-outline-danger btn-sm btn-remove" 
-                            onclick="removerItem(${item.id})" 
-                            aria-label="Remover ${item.nome}">
+                        <button type="button" class="btn btn-outline-danger btn-sm btn-remove" 
+                                onclick="removerItem(${item.id})" aria-label="Remover ${item.nome}">
                             <i class="bi bi-trash"></i>
                         </button>
                     </td>
                 `;
                 tbody.appendChild(tr);
-                document.getElementById("contadorItens").textContent = totalItens;
-                document.getElementById("btnFinalizar").disabled = pedido.length === 0;
-                document.getElementById("tabelaPedido").style.display = pedido.length > 0 ? 'table' : 'none';
-                document.getElementById("carrinhoVazio").style.display = pedido.length === 0 ? 'block' : 'none';
-                document.getElementById("totalPedido").textContent = total.toFixed(2).replace('.', ',');
-
             });
 
-            // Atualiza total formatado com vírgula
             document.getElementById("totalPedido").textContent = total.toFixed(2).replace('.', ',');
-
-            // Atualiza contador do botão carrinho
             contador.textContent = totalItens;
+            inputItens.value = JSON.stringify(pedido.map(({id, quantidade}) => ({id, quantidade})));
 
-            // Atualiza input hidden com array simplificado (id e quantidade)
-            const itensParaEnvio = pedido.map(({ id, quantidade }) => ({ id, quantidade }));
-            inputItens.value = JSON.stringify(itensParaEnvio);
-
-            if (pedido.length > 0) {
-                carrinhoVazio.style.display = 'none';
-                tabelaPedido.style.display = 'table';
-                btnFinalizar.disabled = false;
-            } else {
-                carrinhoVazio.style.display = 'block';
-                tabelaPedido.style.display = 'none';
-                btnFinalizar.disabled = true;
-            }
+            // Mostra/oculta elementos conforme necessário
+            const temItens = pedido.length > 0;
+            carrinhoVazio.style.display = temItens ? 'none' : 'block';
+            tabelaPedido.style.display = temItens ? 'table' : 'none';
+            selecaoEndereco.style.display = temItens ? 'block' : 'none';
+            
+            // Desabilita o botão se não tiver itens ou endereço selecionado
+            btnFinalizar.disabled = !temItens || !enderecoSelecionado.value;
         }
+
+        // Validação antes de enviar o formulário
+        document.getElementById('formPedido').addEventListener('submit', function(e) {
+            if (pedido.length === 0) {
+                e.preventDefault();
+                alert('Seu carrinho está vazio!');
+                return;
+            }
+            
+            if (!enderecoSelecionado.value) {
+                e.preventDefault();
+                alert('Por favor, selecione um endereço para entrega');
+                return;
+            }
+        });
     </script>
 </body>
 </html>

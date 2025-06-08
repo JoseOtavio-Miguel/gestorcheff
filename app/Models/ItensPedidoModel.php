@@ -19,6 +19,7 @@ class ItensPedidoModel extends Model
         'cardapio_id',
         'quantidade',
         'preco_unitario',
+        'preco_total', 
         'criado_em',
         'atualizado_em',
     ];

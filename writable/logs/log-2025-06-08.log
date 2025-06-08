@@ -1353,3 +1353,1387 @@ INFO - 2025-06-08 18:21:27 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2025-06-08 18:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-06-08 18:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-06-08 18:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-08 18:40:20 --> POST recebido: Array
+(
+    [itens] => [{"id":7,"quantidade":1},{"id":8,"quantidade":1}]
+    [endereco_id] => 1
+)
+
+ERROR - 2025-06-08 18:40:20 --> Erro ao inserir pedido: {"usuario_id":"3","endereco_id":"1","status":"pendente","total":0,"criado_em":"2025-06-08 18:40:20"}
+INFO - 2025-06-08 18:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-08 19:32:54 --> POST recebido: Array
+(
+    [itens] => [{"id":7,"quantidade":1},{"id":3,"quantidade":1}]
+    [endereco_id] => 1
+)
+
+ERROR - 2025-06-08 19:32:54 --> Erro ao inserir pedido: {"usuario_id":"3","endereco_id":"1","status":"pendente","total":0,"criado_em":"2025-06-08 19:32:54"}
+INFO - 2025-06-08 19:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-08 20:31:28 --> POST recebido: Array
+(
+    [itens] => [{"id":8,"quantidade":1}]
+    [endereco_id] => 1
+)
+
+ERROR - 2025-06-08 20:31:28 --> Erro ao inserir pedido: {"usuario_id":"3","endereco_id":"1","status":"pendente","total":0,"criado_em":"2025-06-08 20:31:28"}
+INFO - 2025-06-08 20:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-08 20:37:08 --> POST recebido: Array
+(
+    [itens] => [{"id":5,"nome":"Prato de Almoço - Grande (G)","preco":25,"descricao":"Arroz, feijão, salada e uma porção grande de carne.","quantidade":1}]
+)
+
+INFO - 2025-06-08 20:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:52:24 --> ErrorException: Undefined array key "preco"
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 55.
+ 1 APPPATH\Controllers\Pedidos.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "preco"', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Pedidos.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 20:52:27 --> ErrorException: Undefined array key "preco"
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 55.
+ 1 APPPATH\Controllers\Pedidos.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "preco"', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Pedidos.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 20:57:02 --> ErrorException: Undefined variable $cardapioModel
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 51.
+ 1 APPPATH\Controllers\Pedidos.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cardapioModel', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Pedidos.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 20:57:30 --> ErrorException: Undefined variable $cardapioModel
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 52.
+ 1 APPPATH\Controllers\Pedidos.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cardapioModel', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Pedidos.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 20:58:05 --> Error: Class "App\Models\CardapioModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 20:58:13 --> Error: Class "App\Models\CardapioModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 20:58:15 --> Error: Class "App\Models\CardapioModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 20:58:21 --> Error: Class "App\Models\CardapioModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 20:58:23 --> Error: Class "App\Models\CardapioModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 20:59:01 --> ErrorException: Undefined array key "preco"
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 58.
+ 1 APPPATH\Controllers\Pedidos.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "preco"', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Pedidos.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 21:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 21:10:50 --> mysqli_sql_exception: Unknown column 'usuario_id' in 'where clause' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gestorcheff\app\Controllers\Pedidos.php(82): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+#8 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-08 21:10:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario_id' in 'where clause'
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = :usuario_id:
+ORDER BY `criado_em` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Pedidos.php(82): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 21:10:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = :usuario_id:
+ORDER BY `criado_em` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Pedidos.php(82): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 21:10:50 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = :usuario_id:
+ORDER BY `criado_em` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Pedidos.php(82): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 21:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 21:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 18:19:13 --> mysqli_sql_exception: Table 'itens_pedido' already exists in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `i...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `i...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `i...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `i...')
+#4 C:\xampp\htdocs\gestorcheff\app\Database\Migrations\2025-06-08-160246_ItensPedido.php(51): CodeIgniter\Database\Forge->createTable('itens_pedido')
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(867): App\Database\Migrations\ItensPedido->up()
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-08 18:20:44 --> mysqli_sql_exception: Table 'itens_pedido' already exists in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `i...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `i...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `i...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `i...')
+#4 C:\xampp\htdocs\gestorcheff\app\Database\Migrations\2025-06-08-160246_ItensPedido.php(51): CodeIgniter\Database\Forge->createTable('itens_pedido')
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(867): App\Database\Migrations\ItensPedido->up()
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+INFO - 2025-06-08 18:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 18:52:58 --> Error: Class "App\Controllers\EnderecoModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 18:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 18:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 18:54:34 --> mysqli_sql_exception: Unknown column 'preco_total' in 'field list' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `it...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gestorcheff\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\gestorcheff\app\Controllers\Pedidos.php(58): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+#10 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#11 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-08 18:54:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'preco_total' in 'field list'
+[Method: POST, Route: pedidos/salvar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (:pedido_id:, :cardapio_id:, :quantidade:, :preco_unitario:, :preco_total:, :criado_em:, :atualizado_em:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Pedidos.php(58): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 18:54:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'preco_total' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 2, 1, \'22.50\', 22.5, \'2025-06-08 18:54:34\', \'2025-06-08 18:54:34\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 2, 1, \'22.50\', 22.5, \'2025-06-08 18:54:34\', \'2025-06-08 18:54:34\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (:pedido_id:, :cardapio_id:, :quantidade:, :preco_unitario:, :preco_total:, :criado_em:, :atualizado_em:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Pedidos.php(58): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 18:54:34 --> [Caused by] mysqli_sql_exception: Unknown column 'preco_total' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 2, 1, \'22.50\', 22.5, \'2025-06-08 18:54:34\', \'2025-06-08 18:54:34\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 2, 1, \'22.50\', 22.5, \'2025-06-08 18:54:34\', \'2025-06-08 18:54:34\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 2, 1, \'22.50\', 22.5, \'2025-06-08 18:54:34\', \'2025-06-08 18:54:34\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (:pedido_id:, :cardapio_id:, :quantidade:, :preco_unitario:, :preco_total:, :criado_em:, :atualizado_em:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Pedidos.php(58): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-08 18:59:05 --> mysqli_sql_exception: Table 'itens_pedido' already exists in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `i...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `i...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `i...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `i...')
+#4 C:\xampp\htdocs\gestorcheff\app\Database\Migrations\2025-06-08-215805_AlterCampoPedido.php(56): CodeIgniter\Database\Forge->createTable('itens_pedido')
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(867): App\Database\Migrations\ItensPedido->up()
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-08 19:01:45 --> mysqli_sql_exception: Table 'itens_pedido' already exists in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `i...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `i...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `i...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `i...')
+#4 C:\xampp\htdocs\gestorcheff\app\Database\Migrations\2025-06-08-220111_ItensPedido.php(56): CodeIgniter\Database\Forge->createTable('itens_pedido')
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(867): App\Database\Migrations\ItensPedido->up()
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+INFO - 2025-06-08 19:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 19:05:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestorcheff`.`itens_pedido`, CONSTRAINT `itens_pedido_pedido_id_foreign` FOREIGN KEY (`pedido_id`) REFERENCES `pedidos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `it...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `it...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `it...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `it...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gestorcheff\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\gestorcheff\app\Controllers\Pedidos.php(58): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+#10 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#11 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-08 19:05:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestorcheff`.`itens_pedido`, CONSTRAINT `itens_pedido_pedido_id_foreign` FOREIGN KEY (`pedido_id`) REFERENCES `pedidos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: pedidos/salvar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (:pedido_id:, :cardapio_id:, :quantidade:, :preco_unitario:, :preco_total:, :criado_em:, :atualizado_em:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Pedidos.php(58): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:05:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`gestorcheff`.`itens_pedido`, CONSTRAINT `itens_pedido_pedido_id_foreign` FOREIGN KEY (`pedido_id`) REFERENCES `pedidos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 1, 1, \'25.99\', 25.99, \'2025-06-08 19:05:38\', \'2025-06-08 19:05:38\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 1, 1, \'25.99\', 25.99, \'2025-06-08 19:05:38\', \'2025-06-08 19:05:38\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (:pedido_id:, :cardapio_id:, :quantidade:, :preco_unitario:, :preco_total:, :criado_em:, :atualizado_em:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Pedidos.php(58): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:05:38 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`gestorcheff`.`itens_pedido`, CONSTRAINT `itens_pedido_pedido_id_foreign` FOREIGN KEY (`pedido_id`) REFERENCES `pedidos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 1, 1, \'25.99\', 25.99, \'2025-06-08 19:05:38\', \'2025-06-08 19:05:38\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 1, 1, \'25.99\', 25.99, \'2025-06-08 19:05:38\', \'2025-06-08 19:05:38\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (1, 1, 1, \'25.99\', 25.99, \'2025-06-08 19:05:38\', \'2025-06-08 19:05:38\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `itens_pedido` (`pedido_id`, `cardapio_id`, `quantidade`, `preco_unitario`, `preco_total`, `criado_em`, `atualizado_em`) VALUES (:pedido_id:, :cardapio_id:, :quantidade:, :preco_unitario:, :preco_total:, :criado_em:, :atualizado_em:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Pedidos.php(58): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:08:20 --> Error: Class "App\Controllers\EnderecoModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:20:33 --> Error: Class "App\Controllers\PedidoModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:21:02 --> ErrorException: Undefined variable $db
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 124.
+ 1 APPPATH\Controllers\Pedidos.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Pedidos.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:30:30 --> Error: Class "App\Controllers\EnderecoModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:31:32 --> Error: Class "App\Models\EnderecosModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:31:42 --> Error: Class "App\Models\EnderecosModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:31:56 --> Error: Class "App\Models\EnderecosModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:31:58 --> Error: Class "App\Models\EnderecosModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:33:50 --> ErrorException: Undefined variable $itens
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 54.
+ 1 APPPATH\Controllers\Pedidos.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itens', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Pedidos.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:34:19 --> ErrorException: Undefined variable $itens
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 54.
+ 1 APPPATH\Controllers\Pedidos.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itens', 'C:\\xampp\\htdocs\\gestorcheff\\app\\Controllers\\Pedidos.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:34:57 --> Error: Class "App\Controllers\PedidoModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:35:07 --> Error: Class "App\Controllers\PedidoModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:35:19 --> Error: Class "App\Controllers\PedidoModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 61.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 19:40:43 --> Error: Class "App\Models\EnderecosModel" not found
+[Method: POST, Route: pedidos/salvar]
+in APPPATH\Controllers\Pedidos.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 19:41:06 --> mysqli_sql_exception: Unknown column 'data' in 'field list' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\gestorcheff\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\gestorcheff\app\Controllers\Pedidos.php(94): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+#10 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#11 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-08 19:41:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data' in 'field list'
+[Method: POST, Route: pedidos/salvar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pedidos` (`restaurante_id`, `cliente_nome`, `cliente_telefone`, `cliente_endereco`, `valor_total`, `status`, `data`, `criado_em`, `atualizado_em`) VALUES (:restaurante_id:, :cliente_nome:, :cliente_telefone:, :cliente_endereco:, :valor_total:, :status:, :data:, :criado_em:, :atualizado_em:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Pedidos.php(94): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:41:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pedidos` (`restaurante_id`, `cliente_nome`, `cliente_telefone`, `cliente_endereco`, `valor_total`, `status`, `data`, `criado_em`, `atualizado_em`) VALUES (1, \'José Otávio\', \'31984363321\', \'Rua dos Passos, 836 - Centro, Viçosa/MG\', 52.5, \'aguardando\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pedidos` (`restaurante_id`, `cliente_nome`, `cliente_telefone`, `cliente_endereco`, `valor_total`, `status`, `data`, `criado_em`, `atualizado_em`) VALUES (1, \'José Otávio\', \'31984363321\', \'Rua dos Passos, 836 - Centro, Viçosa/MG\', 52.5, \'aguardando\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pedidos` (`restaurante_id`, `cliente_nome`, `cliente_telefone`, `cliente_endereco`, `valor_total`, `status`, `data`, `criado_em`, `atualizado_em`) VALUES (:restaurante_id:, :cliente_nome:, :cliente_telefone:, :cliente_endereco:, :valor_total:, :status:, :data:, :criado_em:, :atualizado_em:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Pedidos.php(94): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:41:06 --> [Caused by] mysqli_sql_exception: Unknown column 'data' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pedidos` (`restaurante_id`, `cliente_nome`, `cliente_telefone`, `cliente_endereco`, `valor_total`, `status`, `data`, `criado_em`, `atualizado_em`) VALUES (1, \'José Otávio\', \'31984363321\', \'Rua dos Passos, 836 - Centro, Viçosa/MG\', 52.5, \'aguardando\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pedidos` (`restaurante_id`, `cliente_nome`, `cliente_telefone`, `cliente_endereco`, `valor_total`, `status`, `data`, `criado_em`, `atualizado_em`) VALUES (1, \'José Otávio\', \'31984363321\', \'Rua dos Passos, 836 - Centro, Viçosa/MG\', 52.5, \'aguardando\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pedidos` (`restaurante_id`, `cliente_nome`, `cliente_telefone`, `cliente_endereco`, `valor_total`, `status`, `data`, `criado_em`, `atualizado_em`) VALUES (1, \'José Otávio\', \'31984363321\', \'Rua dos Passos, 836 - Centro, Viçosa/MG\', 52.5, \'aguardando\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\', \'2025-06-08 19:41:06\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pedidos` (`restaurante_id`, `cliente_nome`, `cliente_telefone`, `cliente_endereco`, `valor_total`, `status`, `data`, `criado_em`, `atualizado_em`) VALUES (:restaurante_id:, :cliente_nome:, :cliente_telefone:, :cliente_endereco:, :valor_total:, :status:, :data:, :criado_em:, :atualizado_em:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Pedidos.php(94): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->salvar()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:45:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 19:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 19:53:08 --> mysqli_sql_exception: Unknown column 'usuario_id' in 'where clause' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gestorcheff\app\Controllers\Pedidos.php(113): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+#8 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-08 19:53:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario_id' in 'where clause'
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = :usuario_id:
+ORDER BY `criado_em` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Pedidos.php(113): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:53:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = :usuario_id:
+ORDER BY `criado_em` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Pedidos.php(113): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:53:08 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = :usuario_id:
+ORDER BY `criado_em` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Pedidos.php(113): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 19:53:15 --> mysqli_sql_exception: Unknown column 'usuario_id' in 'where clause' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gestorcheff\app\Controllers\Pedidos.php(113): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+#8 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-08 19:53:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario_id' in 'where clause'
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = :usuario_id:
+ORDER BY `criado_em` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Pedidos.php(113): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:53:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = :usuario_id:
+ORDER BY `criado_em` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Pedidos.php(113): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:53:15 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = \'3\'
+ORDER BY `criado_em` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos`
+WHERE `usuario_id` = :usuario_id:
+ORDER BY `criado_em` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Pedidos.php(113): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 19:58:02 --> mysqli_sql_exception: Unknown column 'pedidos.usuario_id' in 'where clause' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `pedidos...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gestorcheff\app\Controllers\Pedidos.php(121): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+#8 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-08 19:58:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pedidos.usuario_id' in 'where clause'
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = :pedidos.usuario_id:
+ORDER BY `pedidos`.`criado_em` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Pedidos.php(121): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:58:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pedidos.usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = :pedidos.usuario_id:
+ORDER BY `pedidos`.`criado_em` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Pedidos.php(121): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:58:02 --> [Caused by] mysqli_sql_exception: Unknown column 'pedidos.usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = :pedidos.usuario_id:
+ORDER BY `pedidos`.`criado_em` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Pedidos.php(121): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 19:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 19:58:06 --> mysqli_sql_exception: Unknown column 'pedidos.usuario_id' in 'where clause' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `pedidos...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos...', Array, false)
+#4 C:\xampp\htdocs\gestorcheff\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gestorcheff\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gestorcheff\app\Controllers\Pedidos.php(121): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+#8 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#9 C:\xampp\htdocs\gestorcheff\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gestorcheff\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-08 19:58:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pedidos.usuario_id' in 'where clause'
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = :pedidos.usuario_id:
+ORDER BY `pedidos`.`criado_em` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Pedidos.php(121): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:58:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pedidos.usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = :pedidos.usuario_id:
+ORDER BY `pedidos`.`criado_em` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Pedidos.php(121): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-08 19:58:06 --> [Caused by] mysqli_sql_exception: Unknown column 'pedidos.usuario_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = \'3\'
+ORDER BY `pedidos`.`criado_em` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`.*, `restaurantes`.`nome` as `restaurante_nome`
+FROM `pedidos`
+JOIN `restaurantes` ON `restaurantes`.`id` = `pedidos`.`restaurante_id`
+WHERE `pedidos`.`usuario_id` = :pedidos.usuario_id:
+ORDER BY `pedidos`.`criado_em` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Pedidos.php(121): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:01:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/rastreio-pedidos.php"
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/rastreio-pedidos.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuario/rastreio-pedidos', [], true)
+ 3 APPPATH\Controllers\Pedidos.php(124): view('usuario/rastreio-pedidos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:02:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/usuario_template.php"
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/usuario_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layouts/usuario_template', [], true)
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/rastreio-pedidos', [], true)
+ 4 APPPATH\Controllers\Pedidos.php(124): view('usuarios/rastreio-pedidos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:02:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/usuario_template.php"
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/usuario_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layouts/usuario_template', [], true)
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/rastreio-pedidos', [], true)
+ 4 APPPATH\Controllers\Pedidos.php(124): view('usuarios/rastreio-pedidos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:02:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/usuario_template.php"
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/usuario_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layouts/usuario_template', [], true)
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/rastreio-pedidos', [], true)
+ 4 APPPATH\Controllers\Pedidos.php(124): view('usuarios/rastreio-pedidos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:03:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/usuario_template.php"
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/usuario_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layouts/usuario_template', [], true)
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/rastreio-pedidos', [], true)
+ 4 APPPATH\Controllers\Pedidos.php(124): view('usuarios/rastreio-pedidos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:03:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/usuario_template.php"
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/usuario_template.php')
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layouts/usuario_template', [], true)
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/rastreio-pedidos', [], true)
+ 4 APPPATH\Controllers\Pedidos.php(124): view('usuarios/rastreio-pedidos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-08 20:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:06:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/rastreio-pedidos.php"
+[Method: GET, Route: pedidos/rastrear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/rastreio-pedidos.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuario/rastreio-pedidos', [], true)
+ 3 APPPATH\Controllers\Pedidos.php(123): view('usuario/rastreio-pedidos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-08 20:11:39 --> mysqli_sql_exception: Duplicate column name 'usuario_id' in C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gestorcheff\system\Database\MySQLi\Connection.php(312): mysqli->query('ALTER TABLE `pe...', 0)
+#1 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `pe...')
+#2 C:\xampp\htdocs\gestorcheff\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `pe...')
+#3 C:\xampp\htdocs\gestorcheff\system\Database\Forge.php(772): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `pe...')
+#4 C:\xampp\htdocs\gestorcheff\app\Database\Migrations\2025-06-08-231128_AddUsuarioIdToPedidos.php(11): CodeIgniter\Database\Forge->addColumn('pedidos', Array)
+#5 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(867): App\Database\Migrations\AddUsuarioIdToPedidos->up()
+#6 C:\xampp\htdocs\gestorcheff\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\gestorcheff\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\gestorcheff\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\gestorcheff\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\gestorcheff\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\gestorcheff\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\gestorcheff\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+INFO - 2025-06-08 20:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:15:11 --> Error: Call to undefined function getStatusBadgeClass()
+[Method: GET, Route: pedidos/rastrear]
+in APPPATH\Views\usuarios\rastreio-pedidos.php on line 31.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/rastreio-pedidos', [], true)
+ 4 APPPATH\Controllers\Pedidos.php(123): view('usuarios/rastreio-pedidos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:15:14 --> Error: Call to undefined function getStatusBadgeClass()
+[Method: GET, Route: pedidos/rastrear]
+in APPPATH\Views\usuarios\rastreio-pedidos.php on line 31.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/rastreio-pedidos', [], true)
+ 4 APPPATH\Controllers\Pedidos.php(123): view('usuarios/rastreio-pedidos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-08 20:17:30 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\usuarios\rastreio-pedidos.php on line 28.
+ 1 APPPATH\Views\usuarios\rastreio-pedidos.php(28): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\usuarios\\rastreio-pedidos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/rastreio-pedidos', [], true)
+ 5 APPPATH\Controllers\Pedidos.php(123): view('usuarios/rastreio-pedidos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->rastrear()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:17:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/detalhes-pedido.php"
+[Method: GET, Route: pedidos/detalhes/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/detalhes-pedido.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuario/detalhes-pedido', [], true)
+ 3 APPPATH\Controllers\Pedidos.php(150): view('usuario/detalhes-pedido', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->detalhes('7')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:17:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/detalhes-pedido.php"
+[Method: GET, Route: pedidos/detalhes/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/detalhes-pedido.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuario/detalhes-pedido', [], true)
+ 3 APPPATH\Controllers\Pedidos.php(150): view('usuario/detalhes-pedido', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->detalhes('7')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:18:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/detalhes-pedido.php"
+[Method: GET, Route: pedidos/detalhes/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/detalhes-pedido.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuario/detalhes-pedido', [], true)
+ 3 APPPATH\Controllers\Pedidos.php(150): view('usuario/detalhes-pedido', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->detalhes('7')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:18:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "partials/cancelar_pedido_modal.php"
+[Method: GET, Route: pedidos/detalhes/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partials/cancelar_pedido_modal.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('partials/cancelar_pedido_modal', null, true)
+ 3 APPPATH\Views\usuarios\detalhes-pedido.php(67): CodeIgniter\View\View->include('partials/cancelar_pedido_modal')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\usuarios\\detalhes-pedido.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/detalhes-pedido', [], true)
+ 7 APPPATH\Controllers\Pedidos.php(150): view('usuarios/detalhes-pedido', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->detalhes('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-08 20:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-08 20:18:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "partials/cancelar_pedido_modal.php"
+[Method: GET, Route: pedidos/detalhes/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partials/cancelar_pedido_modal.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('partials/cancelar_pedido_modal', null, true)
+ 3 APPPATH\Views\usuarios\detalhes-pedido.php(67): CodeIgniter\View\View->include('partials/cancelar_pedido_modal')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gestorcheff\\app\\Views\\usuarios\\detalhes-pedido.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('usuarios/detalhes-pedido', [], true)
+ 7 APPPATH\Controllers\Pedidos.php(150): view('usuarios/detalhes-pedido', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pedidos->detalhes('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

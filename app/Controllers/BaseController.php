@@ -8,6 +8,8 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+helper('status'); // Coloque isso antes de carregar a view
+
 
 /**
  * Class BaseController
