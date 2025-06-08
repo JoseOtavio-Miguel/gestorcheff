@@ -1,58 +1,35 @@
 <?php
 
-namespace App\Database\Migrations;
+namespace App\Models;
 
-use CodeIgniter\Database\Migration;
+use CodeIgniter\Model;
 
-class ItensPedido extends Migration
+class ItensPedidoModel extends Model
 {
-    public function up()
-    {
-        $this->forge->addField([
-            'id' => [
-                'type'            => 'INT',
-                'unsigned'        => true,
-                'auto_increment'  => true,
-            ],
-            'pedido_id' => [
-                'type'            => 'INT',
-                'unsigned'        => true,
-            ],
-            'cardapio_id' => [
-                'type'            => 'INT',
-                'unsigned'        => true,
-            ],
-            'quantidade' => [
-                'type'            => 'INT',
-                'unsigned'        => true,
-                'default'         => 1,
-            ],
-            'preco_unitario' => [
-                'type'            => 'DECIMAL',
-                'constraint'      => '10,2',
-                'default'         => 0.00,
-            ],
-            'criado_em' => [
-                'type'            => 'DATETIME',
-                'null'            => true,
-            ],
-            'atualizado_em' => [
-                'type'            => 'DATETIME',
-                'null'            => true,
-            ],
-        ]);
+    protected $table = 'itens_pedido';           // Nome da tabela no banco
+    protected $primaryKey = 'id';                // Chave primária
 
-        $this->forge->addKey('id', true);
+    protected $useAutoIncrement = true;
 
-        // Definir as chaves estrangeiras corretamente
-        $this->forge->addForeignKey('pedido_id', 'pedidos', 'id', 'CASCADE', 'CASCADE');
-        $this->forge->addForeignKey('cardapio_id', 'itens_cardapio', 'id', 'CASCADE', 'CASCADE');
+    protected $returnType = 'array';             // Pode ser 'object' se preferir
+    protected $useSoftDeletes = false;           // Altere para true se quiser deletar "logicamente"
 
-        $this->forge->createTable('itens_pedido');
-    }
+    protected $allowedFields = [                 // Campos permitidos para insert/update
+        'pedido_id',
+        'cardapio_id',
+        'quantidade',
+        'preco_unitario',
+        'criado_em',
+        'atualizado_em',
+    ];
 
-    public function down()
-    {
-        $this->forge->dropTable('itens_pedido');
-    }
+    // Timestamps automáticos
+    protected $useTimestamps = true;
+    protected $createdField  = 'criado_em';
+    protected $updatedField  = 'atualizado_em';
+
+    // Validação (opcional, adicione se quiser validar antes de salvar)
+    protected $validationRules    = [];
+    protected $validationMessages = [];
+    protected $skipValidation     = false;
 }

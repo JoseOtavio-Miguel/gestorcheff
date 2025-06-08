@@ -6,15 +6,19 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-/* Bloco Home */
+
+/*     Bloco Home      */
+/* ------------------- */
 
 // Página Home 
 $routes->get('/', 'Home::index');
 $routes->get('home', 'Home::index');
+/* ------------------- */
 
 
 
-/* Bloco Restaurante  */
+/*  Bloco Restaurante  */
+/* ------------------- */
 
 // Página para cadastro de restaurante
 $routes->get('/restaurantes/cadastro', 'Restaurantes::cadastro');
@@ -31,21 +35,25 @@ $routes->post('restaurantes/logar', 'Restaurantes::logar');
 // Painel do restaurante
 $routes->get('painel/(:num)', 'Restaurantes::painel/$1');
 
+// Página de Edição do Restaurante
+$routes->get('restaurantes/editar/(:num)', 'Restaurantes::editar/$1');
+
+// Atualizar Informações do Restaurante
+$routes->post('restaurantes/atualizar/(:num)', 'Restaurantes::atualizar/$1');
+/* ------------------- */
 
 
-/* Bloco Usuário */
+/*    Bloco Usuário    */
+/* ------------------- */
 
 // Página para Registro do Usuario 
 $routes->get('usuarios/cadastro', 'Usuarios::cadastro');
 
-// Página contendo o painel do Usuário
-$routes->get('usuarios/painel-usuario', 'Usuarios::painelUsuario');
+// Criar Usuarios
+$routes->post('usuarios/cadastrar', 'Usuarios::cadastrar');
 
 // Página para Login do Usuário 
 $routes->get('usuarios/login', 'Usuarios::login');
-
-// Criar Usuarios
-$routes->post('usuarios/cadastrar', 'Usuarios::cadastrar');
 
 // Logar na Conta
 $routes->post('usuarios/logar', 'Usuarios::logar');
@@ -53,16 +61,23 @@ $routes->post('usuarios/logar', 'Usuarios::logar');
 //Deslogar da Conta
 $routes->get('usuarios/logout', 'Usuarios::logout');
 
+// Página contendo o painel do Usuário
+$routes->get('usuarios/painel-usuario', 'Usuarios::painelUsuario');
+
 // Informações do Usuário 
 $routes->get('usuarios/informacao', 'Usuarios::informacao');
 
+// Atualizar Informações do Usuário
 $routes->get('usuarios/editar/(:num)', 'Usuarios::editar/$1');
 
+// Painel do Usuário
+$routes->get('usuarios/painelUsuario', 'Usuarios::painelUsuario');
+/* ------------------- */
 
 
+/*   Bloco Cardápio    */
+/* ------------------- */
 
-
-/* Bloco Cardapio */
 // Página Principal de Cardapio
 $routes->get('cardapio/(:num)', 'Cardapio::index/$1');
 
@@ -72,36 +87,58 @@ $routes->get('cardapio/novo/(:num)', 'Cardapio::novo/$1');
 // Cadastrar novo Cardapio
 $routes->post('cardapio/salvar/(:num)', 'Cardapio::salvar/$1');
 
+// Página de Listagem do Cardápio
 $routes->get('cardapiousuario/cardapio', 'CardapioUsuario::cardapio');
 
-// routes.php
+// Página de Listagem do Cardápio do Restaurante
 $routes->get('cardapio/painel/(:num)', 'Cardapio::painel/$1');
 
-$routes->get('restaurantes/editar/(:num)', 'Restaurantes::editar/$1');
-$routes->post('restaurantes/atualizar/(:num)', 'Restaurantes::atualizar/$1');
-
-$routes->get('relatorios', 'Relatorios::index');
-
-$routes->get('pedidos/(:num)', 'Pedidos::index/$1');
-
-$routes->get('usuarios/painelUsuario', 'Usuarios::painelUsuario');
-
-
+// Página de Edição do Cardápio
 $routes->get('cardapio/editar/(:num)', 'Cardapio::editar/$1');
+
+// Atualizar Cardápio
 $routes->post('cardapio/atualizar/(:num)', 'Cardapio::atualizar/$1');
+
+// Página de Listagem do Cardápio
 $routes->get('cardapio/listar/(:num)', 'Cardapio::listar/$1');
+/* ------------------- */
+
+ 
+/*   Bloco Endereço    */
+/* ------------------- */
+
+$routes->get('api/enderecos/usuario/(:num)', 'Api\Enderecos::usuario/$1');
 
 
-/* Bloco Endereço */
 // Página de Cadastro do Endereço
 $routes->post('endereco/salvar', 'Endereco::salvar');
 
 // Página de Exclusao do Endereço
 $routes->post('endereco/excluir/(:num)', 'Endereco::excluir/$1');
 
-
 // Salvar Endereço do Usuário
 $routes->get('/endereco/perfil', 'Endereco::perfil');
 
 // Página de Edição do Endereço
 $routes->post('endereco/atualizar/(:num)', 'Endereco::atualizar/$1');
+/* ------------------- */
+
+
+/* Bloco Pedidos */
+/* ------------------- */
+
+// Página de Pedidos do Restaurante
+$routes->get('pedidos/(:num)', 'Pedidos::index/$1');
+
+// Salvar Pedido
+$routes->get('pedidos/rastrear', 'Pedidos::rastrear'); 
+
+$routes->post('pedidos/salvar', 'Pedidos::salvar');
+/* ------------------- */
+
+
+/*   Bloco Relátorios  */
+/* ------------------- */
+
+// Página de Relatórios
+$routes->get('relatorios', 'Relatorios::index');

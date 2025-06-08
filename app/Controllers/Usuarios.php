@@ -163,6 +163,9 @@ class Usuarios extends BaseController
                     'usuario_id' => $usuario['id'],
                     'nome' => $usuario['nome'],
                     'email' => $usuario['email'],
+                    'telefone' => $usuario['telefone'],   
+                    'cpf' => $usuario['cpf'],             
+                    'datanascimento' => $usuario['datanascimento'], 
                     'logged_in' => true
                 ];
                 $session->set($sessionData);

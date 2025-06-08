@@ -40,13 +40,25 @@ class Pedido extends Migration
                 'constraint'     => ['aguardando', 'preparando', 'enviado', 'finalizado', 'cancelado'],
                 'default'        => 'aguardando',
             ],
+            'data' => [ //  novo campo: data do pedido
+                'type'       => 'DATETIME',
+                'null'       => true,
+            ],
+            'avaliacao' => [ //  novo campo: nota de 1 a 5
+                'type'       => 'INT',
+                'null'       => true,
+            ],
+            'avaliacao_detalhes' => [ //  novo campo: texto do cliente
+                'type'       => 'TEXT',
+                'null'       => true,
+            ],
             'criado_em' => [
-                'type'           => 'DATETIME',
-                'null'           => true,
+                'type'       => 'DATETIME',
+                'null'       => true,
             ],
             'atualizado_em' => [
-                'type'           => 'DATETIME',
-                'null'           => true,
+                'type'       => 'DATETIME',
+                'null'       => true,
             ],
         ]);
 
