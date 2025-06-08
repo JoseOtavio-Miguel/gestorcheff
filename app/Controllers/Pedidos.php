@@ -83,6 +83,7 @@ public function salvar()
     // Prepara os dados para salvar o pedido
     $pedidoData = [
         'restaurante_id'      => $restauranteId, // ou dinâmico se você tiver isso no contexto
+        'usuario_id'          => $usuarioId,
         'cliente_nome'        => $usuario['nome'] . ' ' . $usuario['sobrenome'],
         'cliente_telefone'    => $usuario['telefone'] ?? '',
         'cliente_endereco'    => $endereco['logradouro'] . ', ' . $endereco['numero'] . ' - ' . $endereco['bairro'] . ', ' . $endereco['cidade'] . '/' . $endereco['estado'],
@@ -95,6 +96,23 @@ public function salvar()
     if (!$pedidoModel->save($pedidoData)) {
         return redirect()->back()->with('error', 'Erro ao salvar o pedido.');
     }
+
+    $pedidoId = $pedidoModel->getInsertID(); // pega o ID do pedido recém-salvo
+    $itensPedidoModel = new \App\Models\ItensPedidoModel();
+
+    foreach ($itens as $item) {
+        $cardapio = $itemModel->find($item['id']);
+        if (!$cardapio) continue;
+
+        $itensPedidoModel->save([
+            'pedido_id'      => $pedidoId,
+            'cardapio_id'    => $cardapio['id'],
+            'quantidade'     => $item['quantidade'],
+            'preco_unitario' => $cardapio['preco'],
+            'preco_total'    => $cardapio['preco'] * $item['quantidade']
+        ]);
+    }
+
 
     return redirect()->to('usuarios/painelUsuario')->with('success', 'Pedido criado com sucesso!');
 }
@@ -126,30 +144,34 @@ public function salvar()
     }
 
 
-
     public function detalhes($pedidoId)
     {
-        $pedidoModel = new PedidosModel();
-        $itensPedidoModel = new \App\Models\ItensPedidoModel();
-        
+        $db = \Config\Database::connect();
+        $pedidoModel = new \App\Models\PedidosModel();
+
+        // Busca o pedido
         $pedido = $pedidoModel->find($pedidoId);
         if (!$pedido) {
             return redirect()->back()->with('error', 'Pedido não encontrado');
         }
 
-        // Verifica se o pedido pertence ao usuário logado
+        // Verifica se pertence ao usuário logado
         if ($pedido['usuario_id'] != session()->get('usuario_id')) {
             return redirect()->back()->with('error', 'Acesso não autorizado');
         }
 
-        $itens = $itensPedidoModel->select('itens_pedido.*, itens_cardapio.nome as item_nome')
-                ->join('itens_cardapio', 'itens_cardapio.id = itens_pedido.cardapio_id')
-                ->where('pedido_id', $pedidoId)
-                ->findAll();
+        // Query SQL nativa
+        $query = "
+            SELECT itens_pedido.*, itens_cardapio.nome AS item_nome
+            FROM itens_pedido
+            JOIN itens_cardapio ON itens_cardapio.id = itens_pedido.cardapio_id
+            WHERE itens_pedido.pedido_id = ?
+        ";
+        $itens = $db->query($query, [$pedidoId])->getResultArray();
 
         return view('usuarios/detalhes-pedido', [
             'pedido' => $pedido,
-            'itens' => $itens
+            'itens'  => $itens
         ]);
     }
 

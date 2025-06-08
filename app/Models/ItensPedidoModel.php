@@ -20,8 +20,6 @@ class ItensPedidoModel extends Model
         'quantidade',
         'preco_unitario',
         'preco_total', 
-        'criado_em',
-        'atualizado_em',
     ];
 
     // Timestamps automáticos

@@ -1,6 +1,8 @@
-<?= $this->extend('layouts/usuario_template') ?>
+<?= $this->extend('layouts/main') ?>
 
 <?= $this->section('content') ?>
+
+
 <div class="container py-5">
     <div class="card">
         <div class="card-header bg-primary text-white">
@@ -37,20 +39,24 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($itens as $item): ?>
-                            <tr>
-                                <td><?= esc($item['item_nome']) ?></td>
-                                <td><?= $item['quantidade'] ?></td>
-                                <td>R$ <?= number_format($item['preco_unitario'], 2, ',', '.') ?></td>
-                                <td>R$ <?= number_format($item['preco_total'], 2, ',', '.') ?></td>
-                            </tr>
-                        <?php endforeach; ?>
+                        <?php if (!empty($itens)): ?>
+                            <?php foreach ($itens as $item): ?>
+                                <tr>
+                                    <td><?= esc($item['item_nome']) ?></td>
+                                    <td><?= $item['quantidade'] ?></td>
+                                    <td>R$ <?= number_format($item['preco_unitario'], 2, ',', '.') ?></td>
+                                    <td>R$ <?= number_format($item['preco_total'], 2, ',', '.') ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <tr><td colspan="4">Nenhum item encontrado.</td></tr>
+                        <?php endif; ?>
                     </tbody>
                 </table>
             </div>
 
             <div class="mt-4">
-                <?php if ($pedido['status'] == 'aguardando' || $pedido['status'] == 'preparando'): ?>
+                <?php if (in_array($pedido['status'], ['aguardando', 'preparando'])): ?>
                     <button class="btn btn-danger cancelar-pedido" data-pedido-id="<?= $pedido['id'] ?>">
                         <i class="bi bi-x-circle"></i> Cancelar Pedido
                     </button>
@@ -63,13 +69,51 @@
     </div>
 </div>
 
-<!-- Modal de Confirmação de Cancelamento (mesmo da view anterior) -->
-<?= $this->include('partials/cancelar_pedido_modal') ?>
+<!-- Modal -->
+<div class="modal fade" id="cancelarPedidoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title">Confirmar Cancelamento</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Deseja mesmo cancelar este pedido? Esta ação não pode ser desfeita.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                <button type="button" class="btn btn-danger" id="confirmarCancelamento">Confirmar Cancelamento</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?= $this->endSection() ?>
 
 <?= $this->section('scripts') ?>
 <script>
-// Mesmo script da view anterior
+$(document).ready(function () {
+    let pedidoId;
+
+    $('.cancelar-pedido').click(function () {
+        pedidoId = $(this).data('pedido-id');
+        $('#cancelarPedidoModal').modal('show');
+    });
+
+    $('#confirmarCancelamento').click(function () {
+        $.post('<?= base_url('pedidos/cancelar') ?>', {
+            pedido_id: pedidoId,
+            <?= csrf_token() ?>: '<?= csrf_hash() ?>'
+        }, function (res) {
+            if (res.success) {
+                location.reload();
+            } else {
+                alert(res.message || 'Erro ao cancelar pedido');
+            }
+        }).fail(function () {
+            alert('Erro ao comunicar com o servidor.');
+        });
+    });
+});
 </script>
 <?= $this->endSection() ?>
