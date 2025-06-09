@@ -20,59 +20,68 @@ $routes->get('home', 'Home::index');
 /*  Bloco Restaurante  */
 /* ------------------- */
 
-// Página para cadastro de restaurante
-$routes->get('/restaurantes/cadastro', 'Restaurantes::cadastro');
 
-// Cadastrar restaurante
-$routes->post('restaurantes/cadastrar', 'Restaurantes::cadastrar');
+// Rotas de restaurantes
+$routes->group('restaurantes', ['filter' => 'restauranteAuth'], function($routes) {
+    // Página para cadastro de restaurante
+    $routes->get('cadastro', 'Restaurantes::cadastro');
 
-// Página de login do restaurante
-$routes->get('restaurantes/login','Restaurantes::login');
+    // Cadastrar restaurante
+    $routes->post('cadastrar', 'Restaurantes::cadastrar');
 
-// Logar restaurante
-$routes->post('restaurantes/logar', 'Restaurantes::logar');
+    // Página de login do restaurante
+    $routes->get('login','Restaurantes::login');
 
-// Painel do restaurante
-$routes->get('painel/(:num)', 'Restaurantes::painel/$1');
+    // Logar restaurante
+    $routes->post('logar', 'Restaurantes::logar');
 
-// Página de Edição do Restaurante
-$routes->get('restaurantes/editar/(:num)', 'Restaurantes::editar/$1');
+    // Painel do restaurante
+    $routes->get('painel/(:num)', 'Restaurantes::painel/$1');
 
-// Atualizar Informações do Restaurante
-$routes->post('restaurantes/atualizar/(:num)', 'Restaurantes::atualizar/$1');
+    // Página de Edição do Restaurante
+    $routes->get('editar/(:num)', 'Restaurantes::editar/$1');
+
+    // Atualizar Informações do Restaurante
+    $routes->post('atualizar/(:num)', 'Restaurantes::atualizar/$1');
+        
+});
 /* ------------------- */
+
 
 
 /*    Bloco Usuário    */
 /* ------------------- */
+$routes->group('usuarios', ['filter' => 'usuarioAuth'], function($routes) {
+    
+    // Página para Registro do Usuario 
+    $routes->get('cadastro', 'Usuarios::cadastro');
 
-// Página para Registro do Usuario 
-$routes->get('usuarios/cadastro', 'Usuarios::cadastro');
+    // Criar Usuarios
+    $routes->post('cadastrar', 'Usuarios::cadastrar');
 
-// Criar Usuarios
-$routes->post('usuarios/cadastrar', 'Usuarios::cadastrar');
+    // Página para Login do Usuário 
+    $routes->get('login', 'Usuarios::login');
 
-// Página para Login do Usuário 
-$routes->get('usuarios/login', 'Usuarios::login');
+    // Logar na Conta
+    $routes->post('logar', 'Usuarios::logar');
 
-// Logar na Conta
-$routes->post('usuarios/logar', 'Usuarios::logar');
+    //Deslogar da Conta
+    $routes->get('logout', 'Usuarios::logout');
 
-//Deslogar da Conta
-$routes->get('usuarios/logout', 'Usuarios::logout');
+    // Página contendo o painel do Usuário
+    $routes->get('painel-usuario', 'Usuarios::painelUsuario');
 
-// Página contendo o painel do Usuário
-$routes->get('usuarios/painel-usuario', 'Usuarios::painelUsuario');
+    // Informações do Usuário 
+    $routes->get('informacao', 'Usuarios::informacao');
 
-// Informações do Usuário 
-$routes->get('usuarios/informacao', 'Usuarios::informacao');
+    // Atualizar Informações do Usuário
+    $routes->get('editar/(:num)', 'Usuarios::editar/$1');
 
-// Atualizar Informações do Usuário
-$routes->get('usuarios/editar/(:num)', 'Usuarios::editar/$1');
+    // Painel do Usuário
+    $routes->get('painelUsuario', 'Usuarios::painelUsuario');
+    /* ------------------- */
+});
 
-// Painel do Usuário
-$routes->get('usuarios/painelUsuario', 'Usuarios::painelUsuario');
-/* ------------------- */
 
 
 /*   Bloco Cardápio    */

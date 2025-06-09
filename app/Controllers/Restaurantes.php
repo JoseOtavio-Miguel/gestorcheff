@@ -54,14 +54,19 @@ class Restaurantes extends Controller
 
     }
 
+
     public function painel($restauranteId)
     {
-        return view('restaurantes/painel-restaurante', [  // <-- CERTO
-            'restauranteId' => $restauranteId,
+        if (!session()->get('restaurante_logado')) {
+            return redirect()->to('/restaurantes/login')->with('error', 'Você precisa estar logado.');
+        }
+
+        return view('restaurantes/painel-restaurante', [
+            'restauranteId'   => session()->get('restaurante_id'),
             'restauranteNome' => session()->get('restaurante_nome')
         ]);
-    }   
-
+    }
+    
 
 
     public function logar()
@@ -69,31 +74,32 @@ class Restaurantes extends Controller
         $email = $this->request->getPost('email');
         $senha = $this->request->getPost('senha');
 
-        // Buscar o restaurante no banco
-        $restauranteModel = new RestaurantesModel();
-        $restaurante = $restauranteModel->where('email', $email)->first(); // <-- Aqui!!
+        $restaurante = $this->restaurantesModel->where('email', $email)->first();
 
         if ($restaurante && password_verify($senha, $restaurante['senha'])) {
-            // Login bem-sucedido!
-
-            // Salvar os dados na sessão
+            // Sessão padronizada
             session()->set([
-                'restaurante_id' => $restaurante['id'],
-                'restaurante_nome' => $restaurante['nome'],
-                'logado' => true
+                'restaurante_id'     => $restaurante['id'],
+                'restaurante_nome'   => $restaurante['nome'],
+                'restaurante_email'  => $restaurante['email'],
+                'restaurante_logado' => true
             ]);
 
-            // Redireciona para o painel
-            return view('restaurantes/painel-restaurante', [
-                'restauranteId' => $restaurante['id'], // <- pega o ID real do restaurante!
-                'restauranteNome' => session()->get('restaurante_nome')
-            ]);
-            
+            session()->regenerate(); // segurança extra
+
+            return redirect()->to('/restaurantes/painel/' . $restaurante['id']);
         } else {
-            // Login inválido
             return redirect()->back()->with('error', 'E-mail ou senha incorretos.');
         }
     }
+
+    public function logout()
+    {
+        session()->destroy();
+        return redirect()->to('/restaurantes/login')->with('success', 'Você saiu com sucesso.');
+    }
+
+
 
     /**
     * Exibe o formulário de edição de um restaurante.
