@@ -143,6 +143,9 @@ $routes->post('pedidos/salvar', 'Pedidos::salvar');
 // Página de Relatórios
 $routes->get('relatorios', 'Relatorios::index');
 
+// Sincronizar Relatórios (para uso administrativo)
+$routes->get('relatorios/sincronizar', 'Relatorios::sincronizar');
+
 
 // Rotas de Pedidos (adicionar no seu arquivo app/Config/Routes.php)
 
