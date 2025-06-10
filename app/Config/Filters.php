@@ -25,6 +25,8 @@ class Filters extends BaseFilters
      * or [filter_name => [classname1, classname2, ...]]
      */
     public array $aliases = [
+        'usuarioAuth'     => \App\Filters\UsuarioAuthFilter::class,
+        'restauranteAuth' => \App\Filters\RestauranteAuthFilter::class,
         'csrf'          => CSRF::class,
         'toolbar'       => DebugToolbar::class,
         'honeypot'      => Honeypot::class,
@@ -104,4 +106,6 @@ class Filters extends BaseFilters
      * @var array<string, array<string, list<string>>>
      */
     public array $filters = [];
+
+    
 }

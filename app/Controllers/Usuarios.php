@@ -47,6 +47,12 @@ class Usuarios extends BaseController
 
     public function informacao()
     {
+        helper('autenticacao');
+
+        if (!isUsuarioLogado()) {
+            return redirect()->to('/usuarios/login')->with('error', 'Você precisa estar logado.');
+        }
+
         $usuarioId = session()->get('usuario_id');
 
         if (!$usuarioId) {
@@ -74,6 +80,12 @@ class Usuarios extends BaseController
 
     public function painelUsuario()
     {
+        helper('autenticacao');
+
+        if (!isUsuarioLogado()) {
+            return redirect()->to('/usuarios/login')->with('error', 'Você precisa estar logado.');
+        }
+
         // Pega o ID do usuário da sessão
         $usuarioId = session()->get('usuario_id');
 
@@ -155,25 +167,19 @@ class Usuarios extends BaseController
         $email = $this->request->getPost('email');
         $senha = $this->request->getPost('senha');
 
-        // Verifica se existe o usuário
         $usuario = $model->where('email', $email)->first();
 
         if ($usuario) {
-            // Confere a senha
             if (password_verify($senha, $usuario['senha'])) {
                 $sessionData = [
                     'usuario_id' => $usuario['id'],
                     'nome' => $usuario['nome'],
                     'email' => $usuario['email'],
-                    'telefone' => $usuario['telefone'],   
-                    'cpf' => $usuario['cpf'],             
-                    'datanascimento' => $usuario['datanascimento'], 
                     'logged_in' => true
                 ];
                 $session->set($sessionData);
 
-                $session->set($sessionData);
-                return redirect()->to(base_url('/usuarios/painelUsuario'))->with('success', 'Login realizado com sucesso!');
+                return redirect()->to('/usuarios/painelUsuario')->with('success', 'Login realizado com sucesso!');
             } else {
                 return redirect()->back()->with('error', 'Senha incorreta.');
             }
@@ -185,8 +191,9 @@ class Usuarios extends BaseController
     public function logout()
     {
         session()->destroy();
-        return redirect()->to(base_url('usuarios/login'))->with('success', 'Você saiu com sucesso.');
+        return redirect()->to('/usuarios/login')->with('success', 'Você saiu com sucesso.');
     }
+
 
     public function editar($id)
     {

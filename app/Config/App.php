@@ -200,4 +200,83 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
+
+
+
+    /**
+     * --------------------------------------------------------------------------
+     * Session Driver
+     * --------------------------------------------------------------------------
+     *
+     * The session driver to use for storing session data. The default is the
+     * FileHandler, which stores session data in files on the server.
+     *
+     * Other options include:
+     * - CodeIgniter\Session\Handlers\DatabaseHandler
+     * - CodeIgniter\Session\Handlers\RedisHandler
+     * - CodeIgniter\Session\Handlers\MemcachedHandler
+     */
+    public $sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler';
+
+    /**
+     * --------------------------------------------------------------------------
+     * Session Cookie Name
+     * --------------------------------------------------------------------------
+     *
+     * The name of the cookie used to store session data. This should be unique
+     * to your application to avoid conflicts with other applications.
+     */
+    public $sessionCookieName = 'ci_session';
+
+    /**
+     * --------------------------------------------------------------------------
+     * Session Key
+     * --------------------------------------------------------------------------
+     *
+     * The key used to store session data in the session cookie. This should be
+     * unique to your application to avoid conflicts with other applications.
+     */
+    public $sessionExpiration = 7200; // 2 horas
+
+
+    /**
+     * --------------------------------------------------------------------------
+     * Session Save Path
+     * --------------------------------------------------------------------------
+     *
+     * The path where session data will be stored. This should be writable by
+     * the web server user.
+     */
+    public $sessionSavePath = WRITEPATH . 'session';
+
+    /**
+     * --------------------------------------------------------------------------
+     * Session Match IP
+     * --------------------------------------------------------------------------
+     *
+     * Whether to match the user's IP address when storing session data. If true,
+     * the session will only be valid for requests from the same IP address.
+     */
+    public $sessionMatchIP = false;
+
+    /**
+     * --------------------------------------------------------------------------
+     * Session Time to Update
+     * --------------------------------------------------------------------------
+     *
+     * The time in seconds after which the session ID will be regenerated.
+     * This helps prevent session fixation attacks.
+     */
+    public $sessionTimeToUpdate = 300;
+
+    /**
+     * --------------------------------------------------------------------------
+     * Session Regenerate Destroy
+     * --------------------------------------------------------------------------
+     *
+     * Whether to destroy the session data when regenerating the session ID.
+     * If true, the old session data will be deleted when a new session ID is
+     * generated.
+     */
+    public $sessionRegenerateDestroy = false;
 }
