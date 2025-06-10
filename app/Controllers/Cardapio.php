@@ -159,6 +159,7 @@ class Cardapio extends BaseController
         if (!is_dir($uploadPath)) {
             mkdir($uploadPath, 0755, true);
         }
+        
 
         if ($removerImagem) {
             // Usuário quer remover a imagem atual

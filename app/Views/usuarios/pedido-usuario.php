@@ -114,6 +114,7 @@
         }
         ?>
 
+
         <?php foreach ($categorias as $categoria => $itens): ?>
             <h3 class="categoria-title">
                 <i class="bi bi-bookmark-fill me-2"></i><?= esc($categoria) ?>
@@ -122,8 +123,13 @@
                 <?php foreach ($itens as $item): ?>
                     <div class="col-md-4 col-lg-3">
                         <div class="card-item shadow-sm">
+                            <?php
+                            $imagemUrl = !empty($item['imagem'])
+                                ? base_url('uploads/' . $item['imagem'])
+                                : base_url('uploads/cardapio/default.png');
+                            ?>
                             <img 
-                                src="<?= base_url(!empty($item['imagem']) ? $item['imagem'] : 'uploads/cardapio/default.png') ?>"
+                                src="<?= $imagemUrl ?>"
                                 class="card-img-top img-fluid"
                                 alt="<?= esc($item['nome']) ?>" />
                             <div class="card-body">

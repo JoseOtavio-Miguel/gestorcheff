@@ -7,7 +7,7 @@ use App\Models\EnderecoModel;
 use App\Models\PedidosModel;
 use CodeIgniter\Controller; 
 
-
+helper('status'); // Carrega seu helper com as funções
 
 class Pedidos extends BaseController {
 

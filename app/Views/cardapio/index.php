@@ -2,7 +2,7 @@
 <?= $this->section('content') ?>
 
 <div class="container py-5">
-    <h1 class="painel-title text-center mb-5 fw-bold">📋 Gerenciar Cardápio</h1>
+    <h1 class="painel-title text-center mb-5 fw-bold">  Gerenciar Cardápio </h1>
 
     <?php if (session()->getFlashdata('success')): ?>
         <div class="alert alert-success text-center">
