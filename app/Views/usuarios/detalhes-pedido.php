@@ -384,6 +384,87 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 <script>
+    // Sistema de avaliação por estrelas
+$(document).on('click', '.star-rating', function() {
+    const rating = $(this).data('rating');
+    $('.star-rating').each(function(i, star) {
+        if ($(star).data('rating') <= rating) {
+            $(star).css('color', '#ffc107'); // Estrela amarela
+        } else {
+            $(star).css('color', '#ddd'); // Estrela cinza
+        }
+    });
+    $('#avaliacaoValue').val(rating);
+});
+
+// Abrir modal de avaliação para pedidos finalizados
+$(document).on('click', '.avaliar-pedido', function() {
+    const pedidoId = $(this).data('pedido-id');
+    $('#pedidoIdAvaliacao').val(pedidoId);
+    $('#avaliarPedidoModal').modal('show');
+});
+
+// Enviar avaliação via AJAX
+$('#formAvaliacao').submit(function(e) {
+    e.preventDefault();
+    
+    const btn = $(this).find('button[type="submit"]');
+    btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span> Enviando...');
+    
+    const formData = $(this).serialize();
+    const pedidoId = $('#pedidoIdAvaliacao').val();
+    
+    $.ajax({
+        url: `<?= base_url('pedidos/avaliar') ?>/${pedidoId}`,
+        method: 'POST',
+        data: formData,
+        dataType: 'json',
+        success: function(response) {
+            if (response.success) {
+                $('#avaliarPedidoModal').modal('hide');
+                showToast('success', 'Avaliação enviada com sucesso!');
+                // Atualiza a linha do pedido na tabela
+                $(`tr[data-pedido-id="${pedidoId}"] .avaliar-pedido`).replaceWith(
+                    '<span class="badge bg-success"><i class="bi bi-check-circle"></i> Avaliado</span>'
+                );
+            } else {
+                showToast('danger', response.message || 'Erro ao enviar avaliação');
+                if (response.errors) {
+                    // Mostrar erros de validação
+                    for (const error in response.errors) {
+                        $(`[name="${error}"]`).addClass('is-invalid');
+                        $(`[name="${error}"]`).after(`<div class="invalid-feedback">${response.errors[error]}</div>`);
+                    }
+                }
+            }
+        },
+        error: function() {
+            showToast('danger', 'Erro na comunicação com o servidor');
+        },
+        complete: function() {
+            btn.prop('disabled', false).html('<i class="bi bi-check-circle me-1"></i> Enviar Avaliação');
+        }
+    });
+});
+
+// Função auxiliar para mostrar toasts
+function showToast(type, message) {
+    const toast = $(`<div class="toast align-items-center text-white bg-${type} border-0 position-fixed bottom-0 end-0 m-3" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">${message}</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>`);
+    
+    $('body').append(toast);
+    const bsToast = new bootstrap.Toast(toast[0]);
+    bsToast.show();
+    
+    setTimeout(() => {
+        toast.remove();
+    }, 5000);
+}
+
 $(document).ready(function () {
     let pedidoId;
 

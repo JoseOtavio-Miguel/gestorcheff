@@ -6,6 +6,14 @@ use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
 {
+    
+    public $sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler';
+    public $sessionCookieName = 'ci_session';
+    public $sessionExpiration = 7200; // 2 horas
+    public $sessionSavePath = WRITEPATH . 'session';
+    public $sessionMatchIP = true; // Vincula sessão ao IP
+    public $sessionTimeToLive = 7200; // 2 horas
+    public $sessionRegenerateDestroy = true; // Destrói a sessão antiga ao regenerar
     /**
      * --------------------------------------------------------------------------
      * Base Site URL

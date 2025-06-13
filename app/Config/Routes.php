@@ -20,26 +20,22 @@ $routes->get('home', 'Home::index');
 /*  Bloco Restaurante  */
 /* ------------------- */
 
-// Página para cadastro de restaurante
-$routes->get('/restaurantes/cadastro', 'Restaurantes::cadastro');
+// Rotas que NÃO devem ter filtro de autenticação
+$routes->get('/restaurantes/login', 'Restaurantes::login');
+$routes->post('/restaurantes/home', 'Restaurantes::home');
 
-// Cadastrar restaurante
-$routes->post('restaurantes/cadastrar', 'Restaurantes::cadastrar');
+// Rota de logout
+$routes->get('/restaurantes/logout', 'Restaurantes::logout', ['filter' => 'auth']);
 
-// Página de login do restaurante
-$routes->get('restaurantes/login','Restaurantes::login');
-
-// Logar restaurante
-$routes->post('restaurantes/logar', 'Restaurantes::logar');
-
-// Painel do restaurante
-$routes->get('painel/(:num)', 'Restaurantes::painel/$1');
-
-// Página de Edição do Restaurante
-$routes->get('restaurantes/editar/(:num)', 'Restaurantes::editar/$1');
-
-// Atualizar Informações do Restaurante
-$routes->post('restaurantes/atualizar/(:num)', 'Restaurantes::atualizar/$1');
+// Rotas protegidas (com filtro de autenticação)
+$routes->group('', ['filter' => 'auth'], function($routes) {
+    $routes->get('/restaurantes/cadastro', 'Restaurantes::cadastro');
+    $routes->post('/restaurantes/cadastrar', 'Restaurantes::cadastrar');
+    $routes->get('/painel/(:num)', 'Restaurantes::painel/$1');
+    $routes->get('/restaurantes/editar/(:num)', 'Restaurantes::editar/$1');
+    $routes->post('/restaurantes/atualizar/(:num)', 'Restaurantes::atualizar/$1');
+    $routes->get('/painel', 'Restaurantes::painel');
+});
 /* ------------------- */
 
 
@@ -134,6 +130,9 @@ $routes->get('pedidos/(:num)', 'Pedidos::index/$1');
 $routes->get('pedidos/rastrear', 'Pedidos::rastrear'); 
 
 $routes->post('pedidos/salvar', 'Pedidos::salvar');
+
+// Adicione esta rota (protegida por auth)
+$routes->post('pedidos/avaliar/(:num)', 'Pedidos::avaliar/$1');
 /* ------------------- */
 
 

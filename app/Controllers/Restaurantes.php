@@ -50,50 +50,91 @@ class Restaurantes extends Controller
 
     public function login()
     {
-        return view('restaurantes/login-restaurante');
+        if (session()->get('logado')) {
+            return redirect()->to('/painel');
+        }
 
+        return view('restaurantes/login-restaurante');
     }
 
-    public function painel($restauranteId)
+
+    public function logout()
     {
-        return view('restaurantes/painel-restaurante', [  // <-- CERTO
-            'restauranteId' => $restauranteId,
+        // Registra o logout (opcional, para auditoria)
+        $this->registrarLog('logout', session()->get('restaurante_id'));
+        
+        // Destrói a sessão completamente
+        session()->destroy();
+        
+        return redirect()->to('/restaurantes/login')
+            ->with('success', 'Você saiu do sistema com sucesso.');
+    }
+
+    public function painel()
+    {
+        if (!session()->get('logado')) {
+            return redirect()->to('/login'); // Protege o acesso
+        }
+        return view('restaurantes/painel-restaurante', [  
+            'restauranteId' => session()->get('restaurante_id'),
             'restauranteNome' => session()->get('restaurante_nome')
         ]);
     }   
 
-
-
-    public function logar()
+    
+    // No método home (login), adicione verificação de CSRF
+    public function home()
     {
+
         $email = $this->request->getPost('email');
         $senha = $this->request->getPost('senha');
-
-        // Buscar o restaurante no banco
+        
         $restauranteModel = new RestaurantesModel();
-        $restaurante = $restauranteModel->where('email', $email)->first(); // <-- Aqui!!
-
-        if ($restaurante && password_verify($senha, $restaurante['senha'])) {
-            // Login bem-sucedido!
-
-            // Salvar os dados na sessão
-            session()->set([
-                'restaurante_id' => $restaurante['id'],
-                'restaurante_nome' => $restaurante['nome'],
-                'logado' => true
-            ]);
-
-            // Redireciona para o painel
-            return view('restaurantes/painel-restaurante', [
-                'restauranteId' => $restaurante['id'], // <- pega o ID real do restaurante!
-                'restauranteNome' => session()->get('restaurante_nome')
-            ]);
+        $restaurante = $restauranteModel->where('email', $email)->first();
+        
+        if ($restaurante) {
+            // Verifica se a conta está ativa
+            if ($restaurante['status'] !== 'ativo') {
+                return redirect()->back()->with('error', 'Sua conta está desativada.');
+            }
             
-        } else {
-            // Login inválido
-            return redirect()->back()->with('error', 'E-mail ou senha incorretos.');
+            if (password_verify($senha, $restaurante['senha'])) {
+                // Regenera o ID da sessão para prevenir fixation
+                session()->regenerate();
+                
+                session()->set([
+                    'restaurante_id' => $restaurante['id'],
+                    'restaurante_nome' => $restaurante['nome'],
+                    'logado' => true,
+                    'last_activity' => time(),
+                    'ip_address' => $this->request->getIPAddress(),
+                    'user_agent' => $this->request->getUserAgent()
+                ]);
+                
+                // Redireciona para a URL salva ou para o painel
+                return redirect()->to(session()->get('redirect_url') ?? '/painel');
+            }
         }
+        
+        // Delay para prevenir brute force
+        sleep(2);
+        return redirect()->back()->with('error', 'E-mail ou senha incorretos.');
     }
+
+    // Método para registrar atividades (opcional)
+    protected function registrarLog($acao, $restauranteId)
+    {
+        $logModel = new \App\Models\LogModel();
+        $logModel->save([
+            'restaurante_id' => $restauranteId,
+            'acao' => $acao,
+            'ip' => $this->request->getIPAddress(),
+            'user_agent' => $this->request->getUserAgent()->getAgentString(),
+            'created_at' => date('Y-m-d H:i:s')
+        ]);
+    }
+
+    
 
     /**
     * Exibe o formulário de edição de um restaurante.

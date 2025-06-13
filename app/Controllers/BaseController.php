@@ -9,6 +9,8 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 helper('status'); // Coloque isso antes de carregar a view
+helper('pedidos'); // sem o "_helper" no nome
+
 
 
 /**

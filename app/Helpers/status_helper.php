@@ -13,3 +13,15 @@ if (!function_exists('getStatusBadgeClass')) {
         };
     }
 }
+
+function getStatusIcon($status) {
+    switch ($status) {
+        case 'aguardando': return 'bi-clock';
+        case 'preparando': return 'bi-egg-fried';
+        case 'entregue': return 'bi-check-circle';
+        case 'cancelado': return 'bi-x-circle';
+        default: return 'bi-question-circle';
+    }
+}
+?>
+

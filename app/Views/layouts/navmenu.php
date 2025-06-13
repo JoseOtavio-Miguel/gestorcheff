@@ -27,7 +27,7 @@
                         <a class="nav-link" href="#"><i class="bi bi-house-door me-1"></i> Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="restaurantes/logar"><i class="bi bi-shop me-1"></i> Restaurante</a>
+                        <a class="nav-link" href="restaurantes/home"><i class="bi bi-shop me-1"></i> Restaurante</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#"><i class="bi bi-people me-1"></i> Usuários</a>

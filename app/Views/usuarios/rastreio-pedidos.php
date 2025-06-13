@@ -139,24 +139,25 @@
     }
     
     .badge-aguardando {
-        background-color: #f6c23e;
-        color: #000;
+    background-color: #f6c23e;
+    color: #000;
     }
-    
+
     .badge-preparando {
         background-color: #36b9cc;
         color: #fff;
     }
-    
+
     .badge-entregue {
         background-color: #1cc88a;
         color: #fff;
     }
-    
+
     .badge-cancelado {
         background-color: #e74a3b;
         color: #fff;
     }
+
     
     .btn-rounded {
         border-radius: 50px;
@@ -204,14 +205,9 @@ $(document).ready(function() {
         });
     });
 });
-</script>
-<?= $this->endSection() ?>
 
-<?php
-// Função auxiliar para retornar classes CSS baseadas no status (adicionar no controller ou helper)
-
-// Função auxiliar para retornar ícones baseados no status
-function getStatusIcon($status) {
+function getStatusIcon($status)
+{
     switch ($status) {
         case 'aguardando': return 'bi-clock';
         case 'preparando': return 'bi-egg-fried';
@@ -220,4 +216,16 @@ function getStatusIcon($status) {
         default: return 'bi-question-circle';
     }
 }
-?>
+
+function getStatusBadgeClass($status)
+{
+    switch ($status) {
+        case 'aguardando': return 'badge-aguardando';
+        case 'preparando': return 'badge-preparando';
+        case 'entregue': return 'badge-entregue';
+        case 'cancelado': return 'badge-cancelado';
+        default: return 'badge-secondary';
+    }
+}
+</script>
+<?= $this->endSection() ?>

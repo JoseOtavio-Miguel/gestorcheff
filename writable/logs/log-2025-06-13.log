@@ -1,0 +1,8 @@
+CRITICAL - 2025-06-13 02:03:34 --> ErrorException: Cannot redeclare getStatusIcon() (previously declared in C:\xampp\htdocs\gestorcheff\app\Helpers\pedidos_helper.php:4)
+[Method: GET, Route: usuarios/login]
+in APPPATH\Helpers\status_helper.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-06-13 02:03:35 --> ErrorException: Cannot redeclare getStatusIcon() (previously declared in C:\xampp\htdocs\gestorcheff\app\Helpers\pedidos_helper.php:4)
+[Method: GET, Route: usuarios/login]
+in APPPATH\Helpers\status_helper.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

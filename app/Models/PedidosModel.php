@@ -56,4 +56,21 @@ class PedidosModel extends Model
     ];
 
     protected $skipValidation = false;
+
+
+    // Adicione este método ao seu PedidosModel
+    public function avaliarPedido($pedidoId, $avaliacao, $detalhes = null)
+    {
+        // Verifica se o pedido existe e está finalizado
+        $pedido = $this->find($pedidoId);
+        if (!$pedido || $pedido['status'] !== 'finalizado') {
+            return false;
+        }
+
+        // Atualiza a avaliação
+        return $this->update($pedidoId, [
+            'avaliacao' => $avaliacao,
+            'avaliacao_detalhes' => $detalhes
+        ]);
+    }
 }

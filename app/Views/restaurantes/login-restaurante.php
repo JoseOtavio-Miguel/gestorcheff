@@ -21,7 +21,7 @@
                             <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
                         <?php endif; ?>
 
-                        <form action="<?= base_url('restaurantes/logar') ?>" method="post">
+                        <form action="<?= base_url('restaurantes/home') ?>" method="post">
                             <div class="mb-3">
                                 <label for="email" class="form-label">E-mail</label>
                                 <input type="email" class="form-control form-control-lg" id="email" name="email" required>
